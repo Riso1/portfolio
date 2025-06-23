@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConnectHub - Social Media Platform | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <i class="fas fa-code"></i>
+          <span>DevPortfolio</span>
+        </div>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="../about.html" class="nav__link">О себе</a>
+          </li>
+          <li class="nav__item">
+            <a href="../projects.html" class="nav__link">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="../skills.html" class="nav__link">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="../contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="../projects.html" class="btn btn--outline-pro btn--sm">
+            <i class="fas fa-arrow-left"></i>
+            Назад к проектам
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 70px">
+      <!-- Project Hero -->
+      <section class="project-hero section">
+        <div class="container">
+          <div class="project-hero__content">
+            <div class="project-hero__text">
+              <div class="project-hero__badges">
+                <span class="project-badge project-badge--fullstack"
+                  >Full Stack</span
+                >
+              </div>
+              <h1 class="project-hero__title">
+                Social Media Platform "ConnectHub"
+              </h1>
+              <p class="project-hero__description">
+                Современная социальная платформа с лентой новостей,
+                сообществами, мессенджером, системой рекомендаций и модерацией
+                контента для создания активных онлайн-сообществ.
+              </p>
+
+              <div class="project-hero__stats">
+                <div class="stat">
+                  <div class="stat__number">100K+</div>
+                  <div class="stat__label">активных пользователей</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">1M+</div>
+                  <div class="stat__label">постов создано</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">500+</div>
+                  <div class="stat__label">сообществ</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-hero__image">
+              <img
+                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop"
+                alt="ConnectHub Interface"
+              />
+              <div class="project-hero__tech-stack">
+                <h4>Технологии:</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">GraphQL</span>
+                  <span class="tech-tag">Prisma</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">AWS S3</span>
+                  <span class="tech-tag">Redis</span>
+                  <span class="tech-tag">Chakra UI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Details -->
+      <section class="project-details section section--gray">
+        <div class="container">
+          <div class="project-details__content">
+            <!-- Overview -->
+            <div class="project-section">
+              <h2>Обзор проекта</h2>
+              <p>
+                ConnectHub — это полнофункциональная социальная платформа,
+                созданная для объединения людей с общими интересами. Платформа
+                предоставляет все необходимые инструменты для создания контента,
+                общения, формирования сообществ и развития социальных связей.
+              </p>
+              <p>
+                Архитектура построена на современных технологиях с акцентом на
+                производительность, масштабируемость и пользовательский опыт.
+                Система поддерживает миллионы пользователей и обрабатывает
+                тысячи запросов в секунду.
+              </p>
+            </div>
+
+            <!-- Core Features -->
+            <div class="project-section">
+              <h2>Основные возможности</h2>
+              <div class="social-features">
+                <div class="social-feature">
+                  <div class="social-feature__icon">
+                    <i class="fas fa-stream"></i>
+                  </div>
+                  <h3>Лента новостей</h3>
+                  <p>
+                    Персонализированная лента с умными алгоритмами ранжирования
+                    контента
+                  </p>
+                  <ul>
+                    <li>Машинное обучение для рекомендаций</li>
+                    <li>Фильтрация по интересам</li>
+                    <li>Trending контент</li>
+                    <li>Хронологическая и алгоритмическая сортировка</li>
+                  </ul>
+                </div>
+                <div class="social-feature">
+                  <div class="social-feature__icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <h3>Сообщества</h3>
+                  <p>Создание и управление тематическими сообществами</p>
+                  <ul>
+                    <li>Публичные и приватные группы</li>
+                    <li>Система модерации</li>
+                    <li>События и мероприятия</li>
+                    <li>Роли и права участников</li>
+                  </ul>
+                </div>
+                <div class="social-feature">
+                  <div class="social-feature__icon">
+                    <i class="fas fa-comments"></i>
+                  </div>
+                  <h3>Мессенджер</h3>
+                  <p>Встроенная система обмена сообщениями</p>
+                  <ul>
+                    <li>Личные и групповые чаты</li>
+                    <li>Файлы и медиа</li>
+                    <li>Голосовые сообщения</li>
+                    <li>Статусы прочтения</li>
+                  </ul>
+                </div>
+                <div class="social-feature">
+                  <div class="social-feature__icon">
+                    <i class="fas fa-photo-video"></i>
+                  </div>
+                  <h3>Мультимедиа</h3>
+                  <p>Поддержка различных типов контента</p>
+                  <ul>
+                    <li>Фото и видео</li>
+                    <li>Stories и временный контент</li>
+                    <li>Live трансляции</li>
+                    <li>Аудио подкасты</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Moderation -->
+            <div class="project-section">
+              <h2>Модерация контента</h2>
+              <div class="moderation-system">
+                <div class="moderation-block">
+                  <h3><i class="fas fa-robot"></i> Автоматическая модерация</h3>
+                  <ul>
+                    <li>AI-фильтры для текста и изображений</li>
+                    <li>Обнаружение спама и ботов</li>
+                    <li>Анализ токсичности контента</li>
+                    <li>Автоматическое скрытие нарушений</li>
+                  </ul>
+                </div>
+                <div class="moderation-block">
+                  <h3>
+                    <i class="fas fa-user-shield"></i> Человеческая модерация
+                  </h3>
+                  <ul>
+                    <li>Команда профессиональных модераторов</li>
+                    <li>Система жалоб и апелляций</li>
+                    <li>Градуированные санкции</li>
+                    <li>Прозрачные правила сообщества</li>
+                  </ul>
+                </div>
+                <div class="moderation-block">
+                  <h3><i class="fas fa-balance-scale"></i> Справедливость</h3>
+                  <ul>
+                    <li>Процедура обжалования решений</li>
+                    <li>Независимая комиссия по спорам</li>
+                    <li>Публичная отчетность</li>
+                    <li>Защита от предвзятости</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Implementation -->
+            <div class="project-section">
+              <h2>Техническая реализация</h2>
+              <div class="tech-implementation">
+                <div class="tech-block">
+                  <h3><i class="fas fa-layer-group"></i> Frontend</h3>
+                  <ul>
+                    <li>Next.js с SSR и SSG</li>
+                    <li>React с хуками и контекстом</li>
+                    <li>Chakra UI для дизайн-системы</li>
+                    <li>Apollo Client для GraphQL</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-server"></i> Backend</h3>
+                  <ul>
+                    <li>GraphQL API с Apollo Server</li>
+                    <li>Prisma ORM для работы с БД</li>
+                    <li>JWT аутентификация</li>
+                    <li>WebSocket для реалтайм</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-database"></i> Данные</h3>
+                  <ul>
+                    <li>PostgreSQL основная БД</li>
+                    <li>Redis для кэширования</li>
+                    <li>AWS S3 для медиафайлов</li>
+                    <li>Elasticsearch для поиска</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-brain"></i> ML & AI</h3>
+                  <ul>
+                    <li>TensorFlow для рекомендаций</li>
+                    <li>OpenAI для модерации</li>
+                    <li>Computer Vision для изображений</li>
+                    <li>NLP для анализа текста</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenges -->
+            <div class="project-section">
+              <h2>Вызовы и решения</h2>
+              <div class="challenges">
+                <div class="challenge">
+                  <h3>Масштабирование под нагрузкой</h3>
+                  <p>
+                    <strong>Проблема:</strong> Обработка миллионов пользователей
+                    и их взаимодействий.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Микросервисная архитектура,
+                    горизонтальное масштабирование, CDN и кэширование.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Персонализация контента</h3>
+                  <p>
+                    <strong>Проблема:</strong> Показ релевантного контента
+                    каждому пользователю.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> ML алгоритмы для анализа поведения
+                    и предпочтений пользователей.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Модерация в реальном времени</h3>
+                  <p>
+                    <strong>Проблема:</strong> Быстрое обнаружение и удаление
+                    нежелательного контента.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Комбинация AI-модерации и
+                    человеческого контроля с системой приоритизации.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Projects -->
+      <section class="related-projects section">
+        <div class="container">
+          <h2 class="section__title">Похожие проекты</h2>
+          <div class="related-projects__grid">
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop"
+                  alt="ChatBot Pro"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>AI Chat Assistant "ChatBot Pro"</h3>
+                <p>Интеллектуальный чат-бот с реалтайм общением</p>
+                <a href="chatbot-pro.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
+                  alt="TaskFlow"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Task Management System "TaskFlow"</h3>
+                <p>Система управления проектами для команд</p>
+                <a href="taskflow.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <div class="footer__brand">
+              <i class="fas fa-code"></i>
+              <span>DevPortfolio</span>
+            </div>
+            <p>
+              Создаю современные веб-приложения с использованием передовых
+              технологий
+            </p>
+          </div>
+          <div class="footer__section">
+            <h4>Навигация</h4>
+            <ul class="footer__links">
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="../projects.html">Проекты</a></li>
+              <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2024 DevPortfolio. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

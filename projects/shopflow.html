@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopFlow - E-Commerce Platform | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <i class="fas fa-code"></i>
+          <span>DevPortfolio</span>
+        </div>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="../about.html" class="nav__link">О себе</a>
+          </li>
+          <li class="nav__item">
+            <a href="../projects.html" class="nav__link">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="../skills.html" class="nav__link">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="../contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="../projects.html" class="btn btn--outline-pro btn--sm">
+            <i class="fas fa-arrow-left"></i>
+            Назад к проектам
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 70px">
+      <!-- Project Hero -->
+      <section class="project-hero section">
+        <div class="container">
+          <div class="project-hero__content">
+            <div class="project-hero__text">
+              <div class="project-hero__badges">
+                <span class="project-badge project-badge--featured"
+                  >Избранное</span
+                >
+                <span class="project-badge project-badge--fullstack"
+                  >Full Stack</span
+                >
+              </div>
+              <h1 class="project-hero__title">
+                E-Commerce Platform "ShopFlow"
+              </h1>
+              <p class="project-hero__description">
+                Современная полнофункциональная платформа электронной коммерции
+                с микросервисной архитектурой, поддержкой множественных способов
+                оплаты и продвинутой системой управления заказами.
+              </p>
+
+              <div class="project-hero__stats">
+                <div class="stat">
+                  <div class="stat__number">6</div>
+                  <div class="stat__label">месяцев разработки</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">15+</div>
+                  <div class="stat__label">микросервисов</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">99.9%</div>
+                  <div class="stat__label">uptime</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-hero__image">
+              <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop"
+                alt="ShopFlow Dashboard"
+              />
+              <div class="project-hero__tech-stack">
+                <h4>Технологии:</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">Redis</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">Stripe</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Details -->
+      <section class="project-details section section--gray">
+        <div class="container">
+          <div class="project-details__content">
+            <!-- Overview -->
+            <div class="project-section">
+              <h2>Обзор проекта</h2>
+              <p>
+                ShopFlow — это современная e-commerce платформа, разработанная с
+                использованием микросервисной архитектуры. Проект включает в
+                себя клиентскую часть для покупателей, административную панель
+                для управления товарами и заказами, а также мобильное приложение
+                для удобных покупок на ходу.
+              </p>
+              <p>
+                Платформа поддерживает множественные способы оплаты через
+                Stripe, имеет продвинутую систему поиска и фильтрации товаров,
+                систему отзывов и рейтингов, а также интегрированную систему
+                уведомлений.
+              </p>
+            </div>
+
+            <!-- Features -->
+            <div class="project-section">
+              <h2>Ключевые возможности</h2>
+              <div class="features-grid">
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <h3>Корзина покупок</h3>
+                  <p>
+                    Интуитивная корзина с возможностью сохранения на потом и
+                    быстрого оформления заказа
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-credit-card"></i>
+                  </div>
+                  <h3>Множественные способы оплаты</h3>
+                  <p>
+                    Интеграция со Stripe для поддержки карт, PayPal, Apple Pay и
+                    Google Pay
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <h3>Умный поиск</h3>
+                  <p>
+                    Продвинутый поиск с автодополнением, фильтрами и сортировкой
+                    по различным параметрам
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <h3>Аналитика и отчеты</h3>
+                  <p>
+                    Детальная аналитика продаж, поведения пользователей и
+                    эффективности маркетинга
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <h3>Мобильное приложение</h3>
+                  <p>
+                    Нативное мобильное приложение для iOS и Android с
+                    push-уведомлениями
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-cogs"></i>
+                  </div>
+                  <h3>Админ-панель</h3>
+                  <p>
+                    Мощная административная панель для управления товарами,
+                    заказами и пользователями
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Implementation -->
+            <div class="project-section">
+              <h2>Техническая реализация</h2>
+              <div class="tech-implementation">
+                <div class="tech-block">
+                  <h3><i class="fas fa-layer-group"></i> Архитектура</h3>
+                  <ul>
+                    <li>Микросервисная архитектура с Docker контейнерами</li>
+                    <li>API Gateway для маршрутизации запросов</li>
+                    <li>Event-driven архитектура с Redis Pub/Sub</li>
+                    <li>Горизонтальное масштабирование с Kubernetes</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-database"></i> База данных</h3>
+                  <ul>
+                    <li>PostgreSQL для основных данных</li>
+                    <li>Redis для кэширования и сессий</li>
+                    <li>Elasticsearch для поиска товаров</li>
+                    <li>Репликация и бэкапы</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-shield-alt"></i> Безопасность</h3>
+                  <ul>
+                    <li>JWT токены для аутентификации</li>
+                    <li>OAuth 2.0 для социальных сетей</li>
+                    <li>HTTPS и SSL сертификаты</li>
+                    <li>Rate limiting и защита от DDoS</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-rocket"></i> Производительность</h3>
+                  <ul>
+                    <li>Server-side rendering с Next.js</li>
+                    <li>CDN для статических ресурсов</li>
+                    <li>Lazy loading изображений</li>
+                    <li>Оптимизация запросов к БД</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenges -->
+            <div class="project-section">
+              <h2>Вызовы и решения</h2>
+              <div class="challenges">
+                <div class="challenge">
+                  <h3>Масштабируемость</h3>
+                  <p>
+                    <strong>Проблема:</strong> Необходимость обработки большого
+                    количества одновременных пользователей и заказов.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Внедрение микросервисной
+                    архитектуры с горизонтальным масштабированием и
+                    использование Redis для кэширования.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Производительность поиска</h3>
+                  <p>
+                    <strong>Проблема:</strong> Медленный поиск по большому
+                    каталогу товаров.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Интеграция Elasticsearch с
+                    индексацией товаров и автодополнением.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Безопасность платежей</h3>
+                  <p>
+                    <strong>Проблема:</strong> Обеспечение безопасности
+                    финансовых транзакций.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Использование Stripe с PCI DSS
+                    соответствием и токенизацией карт.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Projects -->
+      <section class="related-projects section">
+        <div class="container">
+          <h2 class="section__title">Похожие проекты</h2>
+          <div class="related-projects__grid">
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=300&h=200&fit=crop"
+                  alt="RestaurantOS"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Restaurant Management "RestaurantOS"</h3>
+                <p>Система управления рестораном с заказами и доставкой</p>
+                <a
+                  href="restaurant-os.html"
+                  class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300&h=200&fit=crop"
+                  alt="ConnectHub"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Social Media Platform "ConnectHub"</h3>
+                <p>Социальная сеть с возможностью создания сообществ</p>
+                <a href="connecthub.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <div class="footer__brand">
+              <i class="fas fa-code"></i>
+              <span>DevPortfolio</span>
+            </div>
+            <p>
+              Создаю современные веб-приложения с использованием передовых
+              технологий
+            </p>
+          </div>
+          <div class="footer__section">
+            <h4>Навигация</h4>
+            <ul class="footer__links">
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="../projects.html">Проекты</a></li>
+              <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2024 DevPortfolio. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

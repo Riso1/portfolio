@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow - Task Management System | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <i class="fas fa-code"></i>
+          <span>DevPortfolio</span>
+        </div>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="../about.html" class="nav__link">О себе</a>
+          </li>
+          <li class="nav__item">
+            <a href="../projects.html" class="nav__link">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="../skills.html" class="nav__link">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="../contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="../projects.html" class="btn btn--outline-pro btn--sm">
+            <i class="fas fa-arrow-left"></i>
+            Назад к проектам
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 70px">
+      <!-- Project Hero -->
+      <section class="project-hero section">
+        <div class="container">
+          <div class="project-hero__content">
+            <div class="project-hero__text">
+              <div class="project-hero__badges">
+                <span class="project-badge project-badge--fullstack"
+                  >Full Stack</span
+                >
+              </div>
+              <h1 class="project-hero__title">
+                Task Management System "TaskFlow"
+              </h1>
+              <p class="project-hero__description">
+                Комплексная система управления проектами и задачами для команд с
+                канбан-досками, временными линиями, отчетами и интеграцией с
+                календарем.
+              </p>
+
+              <div class="project-hero__stats">
+                <div class="stat">
+                  <div class="stat__number">6</div>
+                  <div class="stat__label">месяцев разработки</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">500+</div>
+                  <div class="stat__label">активных пользователей</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">10K+</div>
+                  <div class="stat__label">задач создано</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-hero__image">
+              <img
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop"
+                alt="TaskFlow Interface"
+              />
+              <div class="project-hero__tech-stack">
+                <h4>Технологии:</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">JWT</span>
+                  <span class="tech-tag">Socket.io</span>
+                  <span class="tech-tag">Ant Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Details -->
+      <section class="project-details section section--gray">
+        <div class="container">
+          <div class="project-details__content">
+            <!-- Overview -->
+            <div class="project-section">
+              <h2>Обзор проекта</h2>
+              <p>
+                TaskFlow — это современная система управления проектами,
+                разработанная для повышения продуктивности команд любого
+                размера. Платформа объединяет в себе лучшие практики Agile и
+                Scrum методологий, предоставляя интуитивный интерфейс для
+                планирования, отслеживания и выполнения задач.
+              </p>
+              <p>
+                Система поддерживает различные представления проектов:
+                канбан-доски, список задач, календарь и диаграмма Ганта.
+                Встроенная система уведомлений и комментариев обеспечивает
+                эффективную коммуникацию между участниками команды.
+              </p>
+            </div>
+
+            <!-- Features -->
+            <div class="project-section">
+              <h2>Ключевые возможности</h2>
+              <div class="features-grid">
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-columns"></i>
+                  </div>
+                  <h3>Канбан-доски</h3>
+                  <p>
+                    Визуальное управление задачами с drag & drop
+                    функциональностью
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-chart-gantt"></i>
+                  </div>
+                  <h3>Диаграмма Ганта</h3>
+                  <p>
+                    Планирование проектов с временными зависимостями и
+                    критическим путем
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <h3>Командная работа</h3>
+                  <p>
+                    Назначение задач, комментарии, упоминания и совместное
+                    редактирование
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <h3>Учет времени</h3>
+                  <p>
+                    Трекинг времени выполнения задач с детальной отчетностью
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                  <h3>Аналитика</h3>
+                  <p>
+                    Отчеты по производительности команды и прогрессу проектов
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-calendar"></i>
+                  </div>
+                  <h3>Интеграция календаря</h3>
+                  <p>
+                    Синхронизация с Google Calendar, Outlook и другими
+                    календарями
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Methodologies -->
+            <div class="project-section">
+              <h2>Поддерживаемые методологии</h2>
+              <div class="methodologies">
+                <div class="methodology">
+                  <h3><i class="fas fa-sync"></i> Agile</h3>
+                  <ul>
+                    <li>Спринты и итерации</li>
+                    <li>Backlog управление</li>
+                    <li>Burndown charts</li>
+                    <li>Ретроспективы</li>
+                  </ul>
+                </div>
+                <div class="methodology">
+                  <h3><i class="fas fa-layer-group"></i> Scrum</h3>
+                  <ul>
+                    <li>Роли: Product Owner, Scrum Master</li>
+                    <li>Sprint Planning</li>
+                    <li>Daily Standups</li>
+                    <li>Sprint Review</li>
+                  </ul>
+                </div>
+                <div class="methodology">
+                  <h3><i class="fas fa-stream"></i> Kanban</h3>
+                  <ul>
+                    <li>WIP лимиты</li>
+                    <li>Continuous flow</li>
+                    <li>Cycle time анализ</li>
+                    <li>Cumulative flow диаграммы</li>
+                  </ul>
+                </div>
+                <div class="methodology">
+                  <h3><i class="fas fa-water"></i> Waterfall</h3>
+                  <ul>
+                    <li>Последовательные фазы</li>
+                    <li>Milestone tracking</li>
+                    <li>Dependency management</li>
+                    <li>Resource allocation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Implementation -->
+            <div class="project-section">
+              <h2>Техническая реализация</h2>
+              <div class="tech-implementation">
+                <div class="tech-block">
+                  <h3><i class="fas fa-desktop"></i> Frontend</h3>
+                  <ul>
+                    <li>React с хуками для управления состоянием</li>
+                    <li>Redux Toolkit для глобального состояния</li>
+                    <li>Ant Design для UI компонентов</li>
+                    <li>React DnD для drag & drop</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-server"></i> Backend</h3>
+                  <ul>
+                    <li>Node.js с Express.js фреймворком</li>
+                    <li>JWT для аутентификации</li>
+                    <li>Socket.io для реалтайм обновлений</li>
+                    <li>Multer для загрузки файлов</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-database"></i> База данных</h3>
+                  <ul>
+                    <li>PostgreSQL для основных данных</li>
+                    <li>Redis для кэширования сессий</li>
+                    <li>Prisma ORM для работы с БД</li>
+                    <li>Миграции для версионирования схемы</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-bell"></i> Уведомления</h3>
+                  <ul>
+                    <li>Email уведомления через SendGrid</li>
+                    <li>Push уведомления в браузере</li>
+                    <li>Slack/Discord интеграция</li>
+                    <li>SMS уведомления через Twilio</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenges -->
+            <div class="project-section">
+              <h2>Вызовы и решения</h2>
+              <div class="challenges">
+                <div class="challenge">
+                  <h3>Реалтайм синхронизация</h3>
+                  <p>
+                    <strong>Проблема:</strong> Конфликты при одновременном
+                    редактировании задач несколькими пользователями.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Реализация operational
+                    transformation и conflict resolution алгоритмов.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Производительность с большими проектами</h3>
+                  <p>
+                    <strong>Проблема:</strong> Медленная загрузка проектов с
+                    тысячами задач.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Виртуализация списков, пагинация и
+                    ленивая загрузка данных.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Сложные зависимости задач</h3>
+                  <p>
+                    <strong>Проблема:</strong> Управление циклическими
+                    зависимостями в диаграмме Ганта.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Алгоритм обнаружения циклов и
+                    автоматическое предупреждение пользователей.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Projects -->
+      <section class="related-projects section">
+        <div class="container">
+          <h2 class="section__title">Похожие проекты</h2>
+          <div class="related-projects__grid">
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300&h=200&fit=crop"
+                  alt="ConnectHub"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Social Media Platform "ConnectHub"</h3>
+                <p>Социальная платформа с командными функциями</p>
+                <a href="connecthub.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=300&h=200&fit=crop"
+                  alt="EduPlatform"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Learning Management System "EduPlatform"</h3>
+                <p>Образовательная платформа с управлением курсами</p>
+                <a href="eduplatform.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <div class="footer__brand">
+              <i class="fas fa-code"></i>
+              <span>DevPortfolio</span>
+            </div>
+            <p>
+              Создаю современные веб-приложения с использованием передовых
+              технологий
+            </p>
+          </div>
+          <div class="footer__section">
+            <h4>Навигация</h4>
+            <ul class="footer__links">
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="../projects.html">Проекты</a></li>
+              <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2024 DevPortfolio. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

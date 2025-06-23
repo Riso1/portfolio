@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проекты - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <i class="fas fa-code"></i>
+          <span>DevPortfolio</span>
+        </div>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">О себе</a>
+          </li>
+          <li class="nav__item">
+            <a href="projects.html" class="nav__link active">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="skills.html" class="nav__link">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 70px">
+      <!-- Page Header -->
+      <section class="page-header section">
+        <div class="container">
+          <div class="page-header__content">
+            <h1 class="page-header__title">Мои проекты</h1>
+            <p class="page-header__description">
+              Коллекция из 12 проектов, демонстрирующих мои навыки в различных
+              технологиях и подходах к разработке
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects section">
+        <div class="container">
+          <!-- Project Filters -->
+          <div class="project-filters">
+            <div class="search-box">
+              <i class="fas fa-search"></i>
+              <input
+                type="text"
+                placeholder="Поиск по проектам, технологиям..."
+                id="project-search"
+              />
+            </div>
+            <select class="filter-select" id="category-filter">
+              <option value="all">Все проекты (12)</option>
+              <option value="fullstack">Full Stack (4)</option>
+              <option value="frontend">Frontend (3)</option>
+              <option value="backend">Backend (2)</option>
+              <option value="mobile">Mobile (2)</option>
+              <option value="devops">DevOps (1)</option>
+            </select>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="projects__grid" id="projects-grid">
+            <!-- 1. E-Commerce Platform -->
+            <div class="project-card" data-category="fullstack">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop"
+                  alt="E-Commerce Platform"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/shopflow.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+                <span class="project-card__badge">Избранное</span>
+              </div>
+              <div class="project-card__content">
+                <h3>E-Commerce Platform</h3>
+                <p>
+                  Полнофункциональная платформа электронной коммерции с
+                  микросервисной архитектурой
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">Redis</span>
+                  <span class="tech-tag">Docker</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. AI Chat Application -->
+            <div class="project-card" data-category="frontend">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop"
+                  alt="AI Chat Application"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/chatbot-pro.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+                <span class="project-card__badge">Избранное</span>
+              </div>
+              <div class="project-card__content">
+                <h3>AI Chat Application</h3>
+                <p>Реалтайм чат с интеграцией ИИ и WebSocket соединениями</p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Socket.io</span>
+                  <span class="tech-tag">OpenAI</span>
+                  <span class="tech-tag">JWT</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Data Analytics Dashboard -->
+            <div class="project-card" data-category="frontend">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop"
+                  alt="Analytics Dashboard"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/dataviz.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <h3>Data Analytics Dashboard</h3>
+                <p>Интерактивная панель аналитики с визуализацией данных</p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">Vue.js</span>
+                  <span class="tech-tag">D3.js</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">FastAPI</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Task Management API -->
+            <div class="project-card" data-category="backend">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop"
+                  alt="Task Management API"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/taskflow.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <h3>Task Management API</h3>
+                <p>RESTful API для управления задачами с аутентификацией</p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">JWT</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Mobile Banking App -->
+            <div class="project-card" data-category="mobile">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop"
+                  alt="Mobile Banking App"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/finance-app.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+                <span class="project-card__badge">Избранное</span>
+              </div>
+              <div class="project-card__content">
+                <h3>Mobile Banking App</h3>
+                <p>Мобильное приложение с биометрической аутентификацией</p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Redux</span>
+                  <span class="tech-tag">Firebase</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. DevOps Monitoring System -->
+            <div class="project-card" data-category="devops">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop"
+                  alt="Monitoring System"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/serverwatch.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <h3>DevOps Monitoring System</h3>
+                <p>Система мониторинга инфраструктуры с алертами</p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Grafana</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">Kubernetes</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. Social Media Platform -->
+            <div class="project-card" data-category="fullstack">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=250&fit=crop"
+                  alt="Social Media Platform"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/connecthub.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <h3>Social Media Platform</h3>
+                <p>Социальная платформа с реалтайм уведомлениями</p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Socket.io</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8. Educational Platform -->
+            <div class="project-card" data-category="fullstack">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop"
+                  alt="Educational Platform"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/eduplatform.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+                <span class="project-card__badge">Избранное</span>
+              </div>
+              <div class="project-card__content">
+                <h3>Educational Platform</h3>
+                <p>Платформа онлайн-обучения с интерактивными курсами</p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">WebRTC</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9. Weather Forecast App -->
+            <div class="project-card" data-category="frontend">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop"
+                  alt="Weather App"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/weather-pro.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <h3>Weather Forecast Pro</h3>
+                <p>PWA приложение с прогнозом погоды и геолокацией</p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">PWA</span>
+                  <span class="tech-tag">API</span>
+                  <span class="tech-tag">Charts.js</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10. Crypto Portfolio Tracker -->
+            <div class="project-card" data-category="fullstack">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=400&h=250&fit=crop"
+                  alt="Crypto Tracker"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/crypto-watch.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <h3>Crypto Portfolio Tracker</h3>
+                <p>Трекер криптовалютного портфеля с DeFi интеграцией</p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Web3.js</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Redis</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 11. Restaurant Management System -->
+            <div class="project-card" data-category="backend">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=250&fit=crop"
+                  alt="Restaurant System"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/restaurant-os.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <h3>Restaurant Management System</h3>
+                <p>Комплексная система управления рестораном</p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Django</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">Celery</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 12. Real Estate Platform -->
+            <div class="project-card" data-category="mobile">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=250&fit=crop"
+                  alt="Real Estate Platform"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/property-hub.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <h3>Real Estate Platform</h3>
+                <p>Мобильная платформа для поиска недвижимости с VR турами</p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">Three.js</span>
+                  <span class="tech-tag">Maps API</span>
+                  <span class="tech-tag">Firebase</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- No Results Message -->
+          <div
+            id="no-results"
+            class="text-center"
+            style="display: none; padding: 3rem 0"
+          >
+            <p style="font-size: 1.125rem; color: #666">Проекты не найдены</p>
+            <p style="color: #999">Попробуйте изменить параметры поиска</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <div class="footer__brand">
+              <i class="fas fa-code"></i>
+              <span>DevPortfolio</span>
+            </div>
+            <p>
+              Создаю современные веб-приложения с использованием передовых
+              технологий
+            </p>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="footer__social-link">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__section">
+            <h4>Навигация</h4>
+            <ul class="footer__links">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="about.html">О себе</a></li>
+              <li><a href="projects.html">Проекты</a></li>
+              <li><a href="skills.html">Навыки</a></li>
+              <li><a href="contact.html">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h4>Услуги</h4>
+            <ul class="footer__links">
+              <li>Веб-разработка</li>
+              <li>Мобильные приложения</li>
+              <li>UI/UX дизайн</li>
+              <li>Консультации</li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h4>Контакты</h4>
+            <ul class="footer__contacts">
+              <li>aleksandr.developer.full@gmail.com</li>
+              <li>Москва, Россия</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>&copy; 2024 DevPortfolio. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

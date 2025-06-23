@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ServerWatch - DevOps Monitoring System | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <i class="fas fa-code"></i>
+          <span>DevPortfolio</span>
+        </div>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="../about.html" class="nav__link">О себе</a>
+          </li>
+          <li class="nav__item">
+            <a href="../projects.html" class="nav__link">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="../skills.html" class="nav__link">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="../contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="../projects.html" class="btn btn--outline-pro btn--sm">
+            <i class="fas fa-arrow-left"></i>
+            Назад к проектам
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 70px">
+      <!-- Project Hero -->
+      <section class="project-hero section">
+        <div class="container">
+          <div class="project-hero__content">
+            <div class="project-hero__text">
+              <div class="project-hero__badges">
+                <span class="project-badge project-badge--devops">DevOps</span>
+              </div>
+              <h1 class="project-hero__title">
+                DevOps Monitoring System "ServerWatch"
+              </h1>
+              <p class="project-hero__description">
+                Комплексная система мониторинга инфраструктуры с алертами,
+                метриками производительности, логированием и автоматическим
+                масштабированием для современных DevOps команд.
+              </p>
+
+              <div class="project-hero__stats">
+                <div class="stat">
+                  <div class="stat__number">1000+</div>
+                  <div class="stat__label">серверов под мониторингом</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">99.9%</div>
+                  <div class="stat__label">uptime</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">24/7</div>
+                  <div class="stat__label">мониторинг</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-hero__image">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
+                alt="ServerWatch Dashboard"
+              />
+              <div class="project-hero__tech-stack">
+                <h4>Технологии:</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Grafana</span>
+                  <span class="tech-tag">Prometheus</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">Kubernetes</span>
+                  <span class="tech-tag">Elasticsearch</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Details -->
+      <section class="project-details section section--gray">
+        <div class="container">
+          <div class="project-details__content">
+            <!-- Overview -->
+            <div class="project-section">
+              <h2>Обзор проекта</h2>
+              <p>
+                ServerWatch — это enterprise-решение для мониторинга
+                IT-инфраструктуры, разработанное для обеспечения высокой
+                доступности сервисов и проактивного управления ресурсами.
+                Система объединяет в себе мониторинг серверов, приложений,
+                сетевой инфраструктуры и облачных ресурсов.
+              </p>
+              <p>
+                Платформа построена на микросервисной архитектуре с
+                использованием контейнеризации и оркестрации Kubernetes. Это
+                обеспечивает высокую масштабируемость, отказоустойчивость и
+                простоту развертывания в различных средах.
+              </p>
+            </div>
+
+            <!-- Monitoring Features -->
+            <div class="project-section">
+              <h2>Возможности мониторинга</h2>
+              <div class="monitoring-grid">
+                <div class="monitoring-card">
+                  <div class="monitoring-card__icon">
+                    <i class="fas fa-server"></i>
+                  </div>
+                  <h3>Мониторинг серверов</h3>
+                  <ul>
+                    <li>CPU, RAM, дисковое пространство</li>
+                    <li>Сетевой трафик и I/O операции</li>
+                    <li>Процессы и службы</li>
+                    <li>Температура и энергопотребление</li>
+                  </ul>
+                </div>
+                <div class="monitoring-card">
+                  <div class="monitoring-card__icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <h3>Мониторинг приложений</h3>
+                  <ul>
+                    <li>Response time и throughput</li>
+                    <li>Ошибки и исключения</li>
+                    <li>Database queries performance</li>
+                    <li>Custom metrics и бизнес-метрики</li>
+                  </ul>
+                </div>
+                <div class="monitoring-card">
+                  <div class="monitoring-card__icon">
+                    <i class="fas fa-network-wired"></i>
+                  </div>
+                  <h3>Сетевой мониторинг</h3>
+                  <ul>
+                    <li>Пропускная способность каналов</li>
+                    <li>Latency и packet loss</li>
+                    <li>DNS и SSL сертификаты</li>
+                    <li>Firewall и security events</li>
+                  </ul>
+                </div>
+                <div class="monitoring-card">
+                  <div class="monitoring-card__icon">
+                    <i class="fas fa-cloud"></i>
+                  </div>
+                  <h3>Облачный мониторинг</h3>
+                  <ul>
+                    <li>AWS, Azure, GCP ресурсы</li>
+                    <li>Kubernetes кластеры</li>
+                    <li>Контейнеры и микросервисы</li>
+                    <li>Serverless функции</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Alert System -->
+            <div class="project-section">
+              <h2>Система алертов</h2>
+              <div class="alert-features">
+                <div class="alert-feature">
+                  <h3><i class="fas fa-bell"></i> Умные уведомления</h3>
+                  <p>
+                    Многоуровневая система алертов с поддержкой эскалации,
+                    группировки похожих событий и подавления ложных
+                    срабатываний.
+                  </p>
+                  <div class="alert-channels">
+                    <span class="alert-channel">Email</span>
+                    <span class="alert-channel">SMS</span>
+                    <span class="alert-channel">Slack</span>
+                    <span class="alert-channel">Telegram</span>
+                    <span class="alert-channel">PagerDuty</span>
+                    <span class="alert-channel">Webhook</span>
+                  </div>
+                </div>
+                <div class="alert-feature">
+                  <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                  <p>
+                    Использование ML алгоритмов для предсказания проблем,
+                    анализа аномалий и автоматической настройки порогов
+                    срабатывания.
+                  </p>
+                </div>
+                <div class="alert-feature">
+                  <h3>
+                    <i class="fas fa-calendar-alt"></i> Расписания и дежурства
+                  </h3>
+                  <p>
+                    Гибкая система дежурств с ротацией, календарем отпусков и
+                    автоматическим переназначением алертов.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Architecture -->
+            <div class="project-section">
+              <h2>Техническая архитектура</h2>
+              <div class="architecture-diagram">
+                <div class="architecture-layer">
+                  <h3>Сбор данных</h3>
+                  <div class="architecture-components">
+                    <span class="component">Prometheus Exporters</span>
+                    <span class="component">Telegraf Agents</span>
+                    <span class="component">Fluentd</span>
+                    <span class="component">Jaeger Tracing</span>
+                  </div>
+                </div>
+                <div class="architecture-layer">
+                  <h3>Хранение и обработка</h3>
+                  <div class="architecture-components">
+                    <span class="component">Prometheus TSDB</span>
+                    <span class="component">InfluxDB</span>
+                    <span class="component">Elasticsearch</span>
+                    <span class="component">Redis Cache</span>
+                  </div>
+                </div>
+                <div class="architecture-layer">
+                  <h3>Визуализация</h3>
+                  <div class="architecture-components">
+                    <span class="component">Grafana</span>
+                    <span class="component">Kibana</span>
+                    <span class="component">Custom Dashboard</span>
+                    <span class="component">Mobile App</span>
+                  </div>
+                </div>
+                <div class="architecture-layer">
+                  <h3>Алерты и автоматизация</h3>
+                  <div class="architecture-components">
+                    <span class="component">AlertManager</span>
+                    <span class="component">Python Scripts</span>
+                    <span class="component">Ansible Playbooks</span>
+                    <span class="component">Kubernetes HPA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenges -->
+            <div class="project-section">
+              <h2>Вызовы и решения</h2>
+              <div class="challenges">
+                <div class="challenge">
+                  <h3>Масштабирование сбора метрик</h3>
+                  <p>
+                    <strong>Проблема:</strong> Обработка миллионов метрик в
+                    секунду от тысяч серверов.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Горизонтальное масштабирование
+                    Prometheus с федерацией и шардингом данных.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Снижение ложных срабатываний</h3>
+                  <p>
+                    <strong>Проблема:</strong> Большое количество ложных алертов
+                    снижало доверие к системе.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Внедрение ML алгоритмов для
+                    анализа паттернов и динамической настройки порогов.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Высокая доступность системы мониторинга</h3>
+                  <p>
+                    <strong>Проблема:</strong> Критическая важность непрерывной
+                    работы системы мониторинга.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Развертывание в multi-AZ
+                    конфигурации с автоматическим failover и репликацией данных.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Projects -->
+      <section class="related-projects section">
+        <div class="container">
+          <h2 class="section__title">Похожие проекты</h2>
+          <div class="related-projects__grid">
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+                  alt="DataViz"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Analytics Dashboard "DataViz"</h3>
+                <p>Интерактивная панель аналитики с визуализацией</p>
+                <a href="dataviz.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
+                  alt="TaskFlow"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Task Management System "TaskFlow"</h3>
+                <p>Система управления проектами для команд</p>
+                <a href="taskflow.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <div class="footer__brand">
+              <i class="fas fa-code"></i>
+              <span>DevPortfolio</span>
+            </div>
+            <p>
+              Создаю современные веб-приложения с использованием передовых
+              технологий
+            </p>
+          </div>
+          <div class="footer__section">
+            <h4>Навигация</h4>
+            <ul class="footer__links">
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="../projects.html">Проекты</a></li>
+              <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2024 DevPortfolio. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

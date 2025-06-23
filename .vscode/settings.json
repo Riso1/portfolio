@@ -1,0 +1,36 @@
+{
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "html": "html"
+  },
+  "html.format.indentInnerHtml": true,
+  "html.format.wrapLineLength": 120,
+  "css.validate": true,
+  "css.lint.unknownAtRules": "ignore",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "files.associations": {
+    "*.html": "html",
+    "*.css": "css",
+    "*.js": "javascript"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.port": 3000,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "html.autoClosingTags": true,
+  "css.completion.triggerPropertyValueCompletion": true,
+  "javascript.suggest.autoImports": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": true,
+  "workbench.colorTheme": "Dark+ (default dark)",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.5,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true
+}

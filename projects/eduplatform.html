@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduPlatform - Learning Management System | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <i class="fas fa-code"></i>
+          <span>DevPortfolio</span>
+        </div>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="../about.html" class="nav__link">О себе</a>
+          </li>
+          <li class="nav__item">
+            <a href="../projects.html" class="nav__link">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="../skills.html" class="nav__link">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="../contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="../projects.html" class="btn btn--outline-pro btn--sm">
+            <i class="fas fa-arrow-left"></i>
+            Назад к проектам
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 70px">
+      <!-- Project Hero -->
+      <section class="project-hero section">
+        <div class="container">
+          <div class="project-hero__content">
+            <div class="project-hero__text">
+              <div class="project-hero__badges">
+                <span class="project-badge project-badge--fullstack"
+                  >Full Stack</span
+                >
+                <span class="project-badge project-badge--education"
+                  >Education</span
+                >
+              </div>
+              <h1 class="project-hero__title">
+                Learning Management System "EduPlatform"
+              </h1>
+              <p class="project-hero__description">
+                Образовательная платформа с видео-курсами, интерактивными
+                заданиями, системой тестирования, прогрессом обучения и
+                сертификатами для современного онлайн-образования.
+              </p>
+
+              <div class="project-hero__stats">
+                <div class="stat">
+                  <div class="stat__number">50K+</div>
+                  <div class="stat__label">студентов</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">500+</div>
+                  <div class="stat__label">курсов</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">95%</div>
+                  <div class="stat__label">завершаемость</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-hero__image">
+              <img
+                src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop"
+                alt="EduPlatform Dashboard"
+              />
+              <div class="project-hero__tech-stack">
+                <h4>Технологии:</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Socket.io</span>
+                  <span class="tech-tag">FFmpeg</span>
+                  <span class="tech-tag">Stripe</span>
+                  <span class="tech-tag">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Details -->
+      <section class="project-details section section--gray">
+        <div class="container">
+          <div class="project-details__content">
+            <!-- Overview -->
+            <div class="project-section">
+              <h2>Обзор проекта</h2>
+              <p>
+                EduPlatform — это комплексная система управления обучением
+                (LMS), разработанная для предоставления качественного
+                онлайн-образования. Платформа объединяет в себе все необходимые
+                инструменты для создания, проведения и управления
+                образовательными курсами.
+              </p>
+              <p>
+                Система поддерживает различные форматы обучения: видео-лекции,
+                интерактивные задания, тестирования, проекты и групповые работы.
+                Встроенная аналитика помогает преподавателям отслеживать
+                прогресс студентов и оптимизировать учебный процесс.
+              </p>
+            </div>
+
+            <!-- Learning Features -->
+            <div class="project-section">
+              <h2>Возможности обучения</h2>
+              <div class="learning-features">
+                <div class="learning-feature">
+                  <div class="learning-feature__icon">
+                    <i class="fas fa-video"></i>
+                  </div>
+                  <h3>Видео-курсы</h3>
+                  <p>Высококачественные видео-лекции с адаптивным стримингом</p>
+                  <ul>
+                    <li>HD и 4K качество</li>
+                    <li>Субтитры и переводы</li>
+                    <li>Закладки и заметки</li>
+                    <li>Скорость воспроизведения</li>
+                    <li>Офлайн просмотр</li>
+                  </ul>
+                </div>
+                <div class="learning-feature">
+                  <div class="learning-feature__icon">
+                    <i class="fas fa-tasks"></i>
+                  </div>
+                  <h3>Интерактивные задания</h3>
+                  <p>Разнообразные типы заданий для закрепления материала</p>
+                  <ul>
+                    <li>Программирование в браузере</li>
+                    <li>Drag & Drop упражнения</li>
+                    <li>Симуляции и лабораторные</li>
+                    <li>Peer review проекты</li>
+                    <li>Автоматическая проверка</li>
+                  </ul>
+                </div>
+                <div class="learning-feature">
+                  <div class="learning-feature__icon">
+                    <i class="fas fa-clipboard-check"></i>
+                  </div>
+                  <h3>Система тестирования</h3>
+                  <p>Гибкая система оценки знаний</p>
+                  <ul>
+                    <li>Множественный выбор</li>
+                    <li>Открытые вопросы</li>
+                    <li>Временные ограничения</li>
+                    <li>Случайный порядок</li>
+                    <li>Детальная аналитика</li>
+                  </ul>
+                </div>
+                <div class="learning-feature">
+                  <div class="learning-feature__icon">
+                    <i class="fas fa-certificate"></i>
+                  </div>
+                  <h3>Сертификация</h3>
+                  <p>Официальные сертификаты о прохождении курсов</p>
+                  <ul>
+                    <li>Цифровые сертификаты</li>
+                    <li>Blockchain верификация</li>
+                    <li>Интеграция с LinkedIn</li>
+                    <li>Печатные версии</li>
+                    <li>Портфолио достижений</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teacher Tools -->
+            <div class="project-section">
+              <h2>Инструменты для преподавателей</h2>
+              <div class="teacher-tools">
+                <div class="teacher-tool">
+                  <h3>
+                    <i class="fas fa-chalkboard-teacher"></i> Создание контента
+                  </h3>
+                  <p>
+                    Интуитивные инструменты для создания образовательного
+                    контента
+                  </p>
+                  <div class="tool-features">
+                    <span class="tool-feature">WYSIWYG редактор</span>
+                    <span class="tool-feature">Загрузка видео</span>
+                    <span class="tool-feature">Конструктор тестов</span>
+                    <span class="tool-feature">Шаблоны курсов</span>
+                  </div>
+                </div>
+                <div class="teacher-tool">
+                  <h3><i class="fas fa-chart-line"></i> Аналитика и отчеты</h3>
+                  <p>
+                    Детальная аналитика успеваемости и вовлеченности студентов
+                  </p>
+                  <div class="tool-features">
+                    <span class="tool-feature">Прогресс студентов</span>
+                    <span class="tool-feature">Время изучения</span>
+                    <span class="tool-feature">Популярность контента</span>
+                    <span class="tool-feature">Экспорт данных</span>
+                  </div>
+                </div>
+                <div class="teacher-tool">
+                  <h3><i class="fas fa-comments"></i> Коммуникация</h3>
+                  <p>Инструменты для общения со студентами</p>
+                  <div class="tool-features">
+                    <span class="tool-feature">Форумы курсов</span>
+                    <span class="tool-feature">Личные сообщения</span>
+                    <span class="tool-feature">Объявления</span>
+                    <span class="tool-feature">Видеоконференции</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Architecture -->
+            <div class="project-section">
+              <h2>Техническая архитектура</h2>
+              <div class="edu-architecture">
+                <div class="arch-layer">
+                  <h3>Frontend (React SPA)</h3>
+                  <div class="arch-components">
+                    <span class="arch-component">React Router</span>
+                    <span class="arch-component">Redux Toolkit</span>
+                    <span class="arch-component">Material-UI</span>
+                    <span class="arch-component">Video.js Player</span>
+                  </div>
+                </div>
+                <div class="arch-layer">
+                  <h3>Backend (Node.js API)</h3>
+                  <div class="arch-components">
+                    <span class="arch-component">Express.js</span>
+                    <span class="arch-component">JWT Auth</span>
+                    <span class="arch-component">Multer Upload</span>
+                    <span class="arch-component">Socket.io</span>
+                  </div>
+                </div>
+                <div class="arch-layer">
+                  <h3>Database & Storage</h3>
+                  <div class="arch-components">
+                    <span class="arch-component">MongoDB</span>
+                    <span class="arch-component">AWS S3</span>
+                    <span class="arch-component">Redis Cache</span>
+                    <span class="arch-component">Elasticsearch</span>
+                  </div>
+                </div>
+                <div class="arch-layer">
+                  <h3>Media Processing</h3>
+                  <div class="arch-components">
+                    <span class="arch-component">FFmpeg</span>
+                    <span class="arch-component">AWS MediaConvert</span>
+                    <span class="arch-component">CloudFront CDN</span>
+                    <span class="arch-component">HLS Streaming</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenges -->
+            <div class="project-section">
+              <h2>Вызовы и решения</h2>
+              <div class="challenges">
+                <div class="challenge">
+                  <h3>Обработка видео контента</h3>
+                  <p>
+                    <strong>Проблема:</strong> Загрузка, обработка и стриминг
+                    больших видеофайлов.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Использование AWS MediaConvert для
+                    транскодинга и CloudFront для доставки контента.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Персонализация обучения</h3>
+                  <p>
+                    <strong>Проблема:</strong> Адаптация контента под
+                    индивидуальные потребности студентов.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> ML алгоритмы для анализа прогресса
+                    и рекомендации дополнительных материалов.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Защита от мошенничества</h3>
+                  <p>
+                    <strong>Проблема:</strong> Предотвращение списывания и
+                    обеспечение честности тестирования.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Прокторинг с использованием
+                    веб-камеры, случайные вопросы и временные ограничения.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Projects -->
+      <section class="related-projects section">
+        <div class="container">
+          <h2 class="section__title">Похожие проекты</h2>
+          <div class="related-projects__grid">
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300&h=200&fit=crop"
+                  alt="ConnectHub"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Social Media Platform "ConnectHub"</h3>
+                <p>Социальная сеть с сообществами и контентом</p>
+                <a href="connecthub.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=300&h=200&fit=crop"
+                  alt="ChatBot Pro"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>AI Chat Assistant "ChatBot Pro"</h3>
+                <p>Интеллектуальный чат-бот с ИИ</p>
+                <a href="chatbot-pro.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <div class="footer__brand">
+              <i class="fas fa-code"></i>
+              <span>DevPortfolio</span>
+            </div>
+            <p>
+              Создаю современные веб-приложения с использованием передовых
+              технологий
+            </p>
+          </div>
+          <div class="footer__section">
+            <h4>Навигация</h4>
+            <ul class="footer__links">
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="../projects.html">Проекты</a></li>
+              <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2024 DevPortfolio. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinanceApp - Mobile Banking App | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <i class="fas fa-code"></i>
+          <span>DevPortfolio</span>
+        </div>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="../about.html" class="nav__link">О себе</a>
+          </li>
+          <li class="nav__item">
+            <a href="../projects.html" class="nav__link">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="../skills.html" class="nav__link">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="../contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="../projects.html" class="btn btn--outline-pro btn--sm">
+            <i class="fas fa-arrow-left"></i>
+            Назад к проектам
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 70px">
+      <!-- Project Hero -->
+      <section class="project-hero section">
+        <div class="container">
+          <div class="project-hero__content">
+            <div class="project-hero__text">
+              <div class="project-hero__badges">
+                <span class="project-badge project-badge--featured"
+                  >Избранное</span
+                >
+                <span class="project-badge project-badge--mobile">Mobile</span>
+              </div>
+              <h1 class="project-hero__title">
+                Mobile Banking App "FinanceApp"
+              </h1>
+              <p class="project-hero__description">
+                Безопасное мобильное банковское приложение с биометрической
+                аутентификацией, поддержкой переводов, платежей, аналитики
+                расходов и инвестиций.
+              </p>
+
+              <div class="project-hero__stats">
+                <div class="stat">
+                  <div class="stat__number">8</div>
+                  <div class="stat__label">месяцев разработки</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">50K+</div>
+                  <div class="stat__label">скачиваний</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">4.8</div>
+                  <div class="stat__label">рейтинг в App Store</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-hero__image">
+              <img
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop"
+                alt="FinanceApp Interface"
+              />
+              <div class="project-hero__tech-stack">
+                <h4>Технологии:</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Redux</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">Expo</span>
+                  <span class="tech-tag">Plaid API</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Details -->
+      <section class="project-details section section--gray">
+        <div class="container">
+          <div class="project-details__content">
+            <!-- Overview -->
+            <div class="project-section">
+              <h2>Обзор проекта</h2>
+              <p>
+                FinanceApp — это современное мобильное банковское приложение,
+                разработанное с акцентом на безопасность, удобство использования
+                и функциональность. Приложение предоставляет полный спектр
+                банковских услуг: от базовых операций до продвинутой аналитики
+                расходов и инвестиционных инструментов.
+              </p>
+              <p>
+                Приложение построено на React Native с использованием
+                современных практик разработки мобильных приложений. Особое
+                внимание уделено безопасности данных, производительности и
+                соответствию банковским стандартам PCI DSS.
+              </p>
+            </div>
+
+            <!-- Features -->
+            <div class="project-section">
+              <h2>Ключевые возможности</h2>
+              <div class="features-grid">
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-fingerprint"></i>
+                  </div>
+                  <h3>Биометрическая аутентификация</h3>
+                  <p>
+                    Touch ID, Face ID и сканер отпечатков для безопасного входа
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-exchange-alt"></i>
+                  </div>
+                  <h3>Переводы и платежи</h3>
+                  <p>Мгновенные переводы, оплата счетов и QR-код платежи</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-chart-pie"></i>
+                  </div>
+                  <h3>Аналитика расходов</h3>
+                  <p>Автоматическая категоризация трат и детальная аналитика</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-coins"></i>
+                  </div>
+                  <h3>Инвестиции</h3>
+                  <p>Покупка акций, ETF и криптовалют прямо из приложения</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-credit-card"></i>
+                  </div>
+                  <h3>Управление картами</h3>
+                  <p>Блокировка карт, установка лимитов и контроль трат</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-bell"></i>
+                  </div>
+                  <h3>Push-уведомления</h3>
+                  <p>Мгновенные уведомления о транзакциях и важных событиях</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Security Features -->
+            <div class="project-section">
+              <h2>Безопасность</h2>
+              <div class="security-features">
+                <div class="security-feature">
+                  <h3>
+                    <i class="fas fa-shield-alt"></i> Многоуровневая защита
+                  </h3>
+                  <ul>
+                    <li>End-to-end шифрование всех данных</li>
+                    <li>Двухфакторная аутентификация (2FA)</li>
+                    <li>Биометрическая аутентификация</li>
+                    <li>PIN-код и графический ключ</li>
+                  </ul>
+                </div>
+                <div class="security-feature">
+                  <h3><i class="fas fa-eye"></i> Мониторинг безопасности</h3>
+                  <ul>
+                    <li>Обнаружение подозрительной активности</li>
+                    <li>Геолокационные проверки</li>
+                    <li>Анализ поведенческих паттернов</li>
+                    <li>Автоматическая блокировка при угрозах</li>
+                  </ul>
+                </div>
+                <div class="security-feature">
+                  <h3>
+                    <i class="fas fa-certificate"></i> Соответствие стандартам
+                  </h3>
+                  <ul>
+                    <li>PCI DSS Level 1 сертификация</li>
+                    <li>SOC 2 Type II аудит</li>
+                    <li>GDPR соответствие</li>
+                    <li>ISO 27001 стандарты</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Implementation -->
+            <div class="project-section">
+              <h2>Техническая реализация</h2>
+              <div class="tech-implementation">
+                <div class="tech-block">
+                  <h3>
+                    <i class="fas fa-mobile-alt"></i> Мобильная разработка
+                  </h3>
+                  <ul>
+                    <li>React Native для кроссплатформенности</li>
+                    <li>TypeScript для типобезопасности</li>
+                    <li>Redux для управления состоянием</li>
+                    <li>React Navigation для навигации</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-cloud"></i> Backend и API</h3>
+                  <ul>
+                    <li>Firebase для аутентификации</li>
+                    <li>Plaid API для банковских данных</li>
+                    <li>Stripe для платежей</li>
+                    <li>REST API с JWT токенами</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-database"></i> Хранение данных</h3>
+                  <ul>
+                    <li>Encrypted SQLite для локальных данных</li>
+                    <li>Firebase Firestore для синхронизации</li>
+                    <li>Secure Keychain для чувствительных данных</li>
+                    <li>Redux Persist для состояния</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-chart-line"></i> Аналитика</h3>
+                  <ul>
+                    <li>Firebase Analytics для метрик</li>
+                    <li>Crashlytics для отслеживания ошибок</li>
+                    <li>Custom events для UX аналитики</li>
+                    <li>Performance monitoring</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenges -->
+            <div class="project-section">
+              <h2>Вызовы и решения</h2>
+              <div class="challenges">
+                <div class="challenge">
+                  <h3>Безопасность финансовых данных</h3>
+                  <p>
+                    <strong>Проблема:</strong> Необходимость обеспечения
+                    максимальной безопасности при работе с финансовыми данными.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Реализация многоуровневого
+                    шифрования, биометрической аутентификации и соответствие PCI
+                    DSS стандартам.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Производительность на старых устройствах</h3>
+                  <p>
+                    <strong>Проблема:</strong> Медленная работа приложения на
+                    устройствах с ограниченными ресурсами.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Оптимизация рендеринга, ленивая
+                    загрузка компонентов и эффективное управление памятью.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Интеграция с банковскими API</h3>
+                  <p>
+                    <strong>Проблема:</strong> Сложность интеграции с различными
+                    банковскими системами и API.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Использование Plaid API как
+                    единого интерфейса для подключения к банкам и создание
+                    адаптеров для различных провайдеров.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Projects -->
+      <section class="related-projects section">
+        <div class="container">
+          <h2 class="section__title">Похожие проекты</h2>
+          <div class="related-projects__grid">
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=300&h=200&fit=crop"
+                  alt="CryptoWatch"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Cryptocurrency Tracker "CryptoWatch"</h3>
+                <p>Трекер криптовалют с портфолио и аналитикой</p>
+                <a href="crypto-watch.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=300&h=200&fit=crop"
+                  alt="ShopFlow"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>E-Commerce Platform "ShopFlow"</h3>
+                <p>Платформа электронной коммерции с платежами</p>
+                <a href="shopflow.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <div class="footer__brand">
+              <i class="fas fa-code"></i>
+              <span>DevPortfolio</span>
+            </div>
+            <p>
+              Создаю современные веб-приложения с использованием передовых
+              технологий
+            </p>
+          </div>
+          <div class="footer__section">
+            <h4>Навигация</h4>
+            <ul class="footer__links">
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="../projects.html">Проекты</a></li>
+              <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2024 DevPortfolio. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

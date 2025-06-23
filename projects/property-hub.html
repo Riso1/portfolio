@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PropertyHub - Real Estate Platform | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <i class="fas fa-code"></i>
+          <span>DevPortfolio</span>
+        </div>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="../about.html" class="nav__link">О себе</a>
+          </li>
+          <li class="nav__item">
+            <a href="../projects.html" class="nav__link">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="../skills.html" class="nav__link">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="../contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="../projects.html" class="btn btn--outline-pro btn--sm">
+            <i class="fas fa-arrow-left"></i>
+            Назад к проектам
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 70px">
+      <!-- Project Hero -->
+      <section class="project-hero section">
+        <div class="container">
+          <div class="project-hero__content">
+            <div class="project-hero__text">
+              <div class="project-hero__badges">
+                <span class="project-badge project-badge--fullstack"
+                  >Full Stack</span
+                >
+                <span class="project-badge project-badge--realestate"
+                  >Real Estate</span
+                >
+              </div>
+              <h1 class="project-hero__title">
+                Real Estate Platform "PropertyHub"
+              </h1>
+              <p class="project-hero__description">
+                Современная платформа недвижимости с продвинутым поиском,
+                виртуальными турами, картами, ипотечным калькулятором и CRM для
+                агентов для полного цикла сделок с недвижимостью.
+              </p>
+
+              <div class="project-hero__stats">
+                <div class="stat">
+                  <div class="stat__number">100K+</div>
+                  <div class="stat__label">объектов</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">5K+</div>
+                  <div class="stat__label">агентов</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">95%</div>
+                  <div class="stat__label">удовлетворенность</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-hero__image">
+              <img
+                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop"
+                alt="PropertyHub Platform"
+              />
+              <div class="project-hero__tech-stack">
+                <h4>Технологии:</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Google Maps API</span>
+                  <span class="tech-tag">Three.js</span>
+                  <span class="tech-tag">Material-UI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Details -->
+      <section class="project-details section section--gray">
+        <div class="container">
+          <div class="project-details__content">
+            <!-- Overview -->
+            <div class="project-section">
+              <h2>Обзор проекта</h2>
+              <p>
+                PropertyHub — это комплексная платформа для работы с
+                недвижимостью, объединяющая покупателей, продавцов и агентов в
+                единой экосистеме. Платформа предоставляет современные
+                инструменты для поиска, просмотра и сделок с недвижимостью.
+              </p>
+              <p>
+                Система включает в себя продвинутые функции поиска, виртуальные
+                туры, интеграцию с картами, ипотечные калькуляторы и CRM систему
+                для агентов недвижимости.
+              </p>
+            </div>
+
+            <!-- Core Features -->
+            <div class="project-section">
+              <h2>Основные возможности</h2>
+              <div class="property-features">
+                <div class="property-feature">
+                  <div class="property-feature__icon">
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <h3>Умный поиск</h3>
+                  <p>Продвинутая система поиска недвижимости</p>
+                  <ul>
+                    <li>Фильтры по 50+ параметрам</li>
+                    <li>Геопоиск на карте</li>
+                    <li>Поиск по фото (AI)</li>
+                    <li>Сохраненные поиски</li>
+                    <li>Уведомления о новых объектах</li>
+                  </ul>
+                </div>
+                <div class="property-feature">
+                  <div class="property-feature__icon">
+                    <i class="fas fa-vr-cardboard"></i>
+                  </div>
+                  <h3>Виртуальные туры</h3>
+                  <p>Иммерсивный просмотр недвижимости</p>
+                  <ul>
+                    <li>360° панорамы</li>
+                    <li>3D модели квартир</li>
+                    <li>VR поддержка</li>
+                    <li>Виртуальная мебель</li>
+                    <li>Измерения в 3D</li>
+                  </ul>
+                </div>
+                <div class="property-feature">
+                  <div class="property-feature__icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                  </div>
+                  <h3>Интерактивные карты</h3>
+                  <p>Детальная информация о районах</p>
+                  <ul>
+                    <li>Слои инфраструктуры</li>
+                    <li>Транспортная доступность</li>
+                    <li>Школы и больницы</li>
+                    <li>Криминальная статистика</li>
+                    <li>Экологическая обстановка</li>
+                  </ul>
+                </div>
+                <div class="property-feature">
+                  <div class="property-feature__icon">
+                    <i class="fas fa-calculator"></i>
+                  </div>
+                  <h3>Финансовые инструменты</h3>
+                  <p>Калькуляторы и финансовое планирование</p>
+                  <ul>
+                    <li>Ипотечный калькулятор</li>
+                    <li>Расчет налогов</li>
+                    <li>ROI калькулятор</li>
+                    <li>Сравнение предложений банков</li>
+                    <li>Предварительное одобрение</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Agent CRM -->
+            <div class="project-section">
+              <h2>CRM для агентов</h2>
+              <div class="crm-features">
+                <div class="crm-feature">
+                  <h3><i class="fas fa-users"></i> Управление клиентами</h3>
+                  <p>Полная CRM система для работы с клиентами</p>
+                  <div class="crm-tools">
+                    <span class="crm-tool">База контактов</span>
+                    <span class="crm-tool">История взаимодействий</span>
+                    <span class="crm-tool">Автоматические напоминания</span>
+                    <span class="crm-tool">Сегментация клиентов</span>
+                  </div>
+                </div>
+                <div class="crm-feature">
+                  <h3><i class="fas fa-handshake"></i> Управление сделками</h3>
+                  <p>Отслеживание всех этапов сделки</p>
+                  <div class="crm-tools">
+                    <span class="crm-tool">Воронка продаж</span>
+                    <span class="crm-tool">Документооборот</span>
+                    <span class="crm-tool">Электронные подписи</span>
+                    <span class="crm-tool">Календарь показов</span>
+                  </div>
+                </div>
+                <div class="crm-feature">
+                  <h3><i class="fas fa-chart-line"></i> Аналитика и отчеты</h3>
+                  <p>Детальная аналитика работы агента</p>
+                  <div class="crm-tools">
+                    <span class="crm-tool">Конверсия лидов</span>
+                    <span class="crm-tool">Средний цикл сделки</span>
+                    <span class="crm-tool">Комиссионные</span>
+                    <span class="crm-tool">Рейтинг агентов</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Virtual Tours Technology -->
+            <div class="project-section">
+              <h2>Технология виртуальных туров</h2>
+              <div class="vr-tech">
+                <div class="vr-tech-item">
+                  <div class="vr-tech-item__icon">
+                    <i class="fas fa-cube"></i>
+                  </div>
+                  <h3>3D моделирование</h3>
+                  <ul>
+                    <li>Three.js для рендеринга</li>
+                    <li>WebGL оптимизация</li>
+                    <li>Автоматическая генерация из фото</li>
+                    <li>Поддержка мобильных устройств</li>
+                  </ul>
+                </div>
+                <div class="vr-tech-item">
+                  <div class="vr-tech-item__icon">
+                    <i class="fas fa-camera"></i>
+                  </div>
+                  <h3>360° фотографии</h3>
+                  <ul>
+                    <li>Панорамная съемка</li>
+                    <li>HDR обработка</li>
+                    <li>Автоматическая сшивка</li>
+                    <li>Интерактивные точки</li>
+                  </ul>
+                </div>
+                <div class="vr-tech-item">
+                  <div class="vr-tech-item__icon">
+                    <i class="fas fa-couch"></i>
+                  </div>
+                  <h3>Виртуальная мебель</h3>
+                  <ul>
+                    <li>AR технологии</li>
+                    <li>Каталог мебели</li>
+                    <li>Реалистичные материалы</li>
+                    <li>Сохранение конфигураций</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Architecture -->
+            <div class="project-section">
+              <h2>Техническая архитектура</h2>
+              <div class="property-architecture">
+                <div class="arch-layer">
+                  <h3>Frontend (React SPA)</h3>
+                  <div class="arch-components">
+                    <span class="arch-component">React 18</span>
+                    <span class="arch-component">Redux Toolkit</span>
+                    <span class="arch-component">Material-UI</span>
+                    <span class="arch-component">Three.js</span>
+                  </div>
+                </div>
+                <div class="arch-layer">
+                  <h3>Backend (Node.js)</h3>
+                  <div class="arch-components">
+                    <span class="arch-component">Express.js</span>
+                    <span class="arch-component">Mongoose ODM</span>
+                    <span class="arch-component">JWT Auth</span>
+                    <span class="arch-component">Socket.io</span>
+                  </div>
+                </div>
+                <div class="arch-layer">
+                  <h3>Database & Search</h3>
+                  <div class="arch-components">
+                    <span class="arch-component">MongoDB</span>
+                    <span class="arch-component">Elasticsearch</span>
+                    <span class="arch-component">Redis Cache</span>
+                    <span class="arch-component">GridFS</span>
+                  </div>
+                </div>
+                <div class="arch-layer">
+                  <h3>External APIs</h3>
+                  <div class="arch-components">
+                    <span class="arch-component">Google Maps</span>
+                    <span class="arch-component">Yandex Maps</span>
+                    <span class="arch-component">MLS Integration</span>
+                    <span class="arch-component">Bank APIs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenges -->
+            <div class="project-section">
+              <h2>Вызовы и решения</h2>
+              <div class="challenges">
+                <div class="challenge">
+                  <h3>Производительность 3D контента</h3>
+                  <p>
+                    <strong>Проблема:</strong> Медленная загрузка и рендеринг 3D
+                    моделей на мобильных устройствах.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Оптимизация моделей, LOD (Level of
+                    Detail) система и прогрессивная загрузка текстур.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Масштабирование поиска</h3>
+                  <p>
+                    <strong>Проблема:</strong> Быстрый поиск среди миллионов
+                    объектов недвижимости.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Elasticsearch с
+                    геопространственными индексами и кэширование популярных
+                    запросов.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Интеграция с MLS</h3>
+                  <p>
+                    <strong>Проблема:</strong> Синхронизация данных с
+                    множественными MLS системами.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> ETL процессы с обработкой ошибок и
+                    инкрементальная синхронизация данных.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Projects -->
+      <section class="related-projects section">
+        <div class="container">
+          <h2 class="section__title">Похожие проекты</h2>
+          <div class="related-projects__grid">
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=300&h=200&fit=crop"
+                  alt="RestaurantOS"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Restaurant Management "RestaurantOS"</h3>
+                <p>Система управления рестораном</p>
+                <a
+                  href="restaurant-os.html"
+                  class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+                  alt="DataViz"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Analytics Dashboard "DataViz"</h3>
+                <p>Интерактивная панель аналитики</p>
+                <a href="dataviz.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <div class="footer__brand">
+              <i class="fas fa-code"></i>
+              <span>DevPortfolio</span>
+            </div>
+            <p>
+              Создаю современные веб-приложения с использованием передовых
+              технологий
+            </p>
+          </div>
+          <div class="footer__section">
+            <h4>Навигация</h4>
+            <ul class="footer__links">
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="../projects.html">Проекты</a></li>
+              <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2024 DevPortfolio. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

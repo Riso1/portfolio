@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherPro - PWA Weather App | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <i class="fas fa-code"></i>
+          <span>DevPortfolio</span>
+        </div>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="../about.html" class="nav__link">О себе</a>
+          </li>
+          <li class="nav__item">
+            <a href="../projects.html" class="nav__link">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="../skills.html" class="nav__link">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="../contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="../projects.html" class="btn btn--outline-pro btn--sm">
+            <i class="fas fa-arrow-left"></i>
+            Назад к проектам
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 70px">
+      <!-- Project Hero -->
+      <section class="project-hero section">
+        <div class="container">
+          <div class="project-hero__content">
+            <div class="project-hero__text">
+              <div class="project-hero__badges">
+                <span class="project-badge project-badge--frontend"
+                  >Frontend</span
+                >
+                <span class="project-badge project-badge--pwa">PWA</span>
+              </div>
+              <h1 class="project-hero__title">
+                Weather Forecast App "WeatherPro"
+              </h1>
+              <p class="project-hero__description">
+                Прогрессивное веб-приложение для прогноза погоды с детальными
+                картами, уведомлениями, историей и возможностью работы офлайн
+                для максимального удобства пользователей.
+              </p>
+
+              <div class="project-hero__stats">
+                <div class="stat">
+                  <div class="stat__number">1M+</div>
+                  <div class="stat__label">пользователей</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">99.9%</div>
+                  <div class="stat__label">точность прогнозов</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">24/7</div>
+                  <div class="stat__label">доступность</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-hero__image">
+              <img
+                src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop"
+                alt="WeatherPro App"
+              />
+              <div class="project-hero__tech-stack">
+                <h4>Технологии:</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">Vue.js</span>
+                  <span class="tech-tag">PWA</span>
+                  <span class="tech-tag">Service Workers</span>
+                  <span class="tech-tag">OpenWeather API</span>
+                  <span class="tech-tag">Leaflet</span>
+                  <span class="tech-tag">Vuetify</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Details -->
+      <section class="project-details section section--gray">
+        <div class="container">
+          <div class="project-details__content">
+            <!-- Overview -->
+            <div class="project-section">
+              <h2>Обзор проекта</h2>
+              <p>
+                WeatherPro — это современное прогрессивное веб-приложение (PWA)
+                для получения актуальной информации о погоде. Приложение
+                предоставляет детальные прогнозы, интерактивные карты,
+                персональные уведомления и работает как в онлайн, так и в офлайн
+                режиме.
+              </p>
+              <p>
+                Благодаря технологии PWA, приложение устанавливается на
+                устройство пользователя и обеспечивает нативный пользовательский
+                опыт с быстрой загрузкой и плавной анимацией.
+              </p>
+            </div>
+
+            <!-- PWA Features -->
+            <div class="project-section">
+              <h2>PWA возможности</h2>
+              <div class="pwa-features">
+                <div class="pwa-feature">
+                  <div class="pwa-feature__icon">
+                    <i class="fas fa-download"></i>
+                  </div>
+                  <h3>Установка на устройство</h3>
+                  <p>
+                    Приложение можно установить на любое устройство прямо из
+                    браузера
+                  </p>
+                  <ul>
+                    <li>Иконка на рабочем столе</li>
+                    <li>Полноэкранный режим</li>
+                    <li>Нативная навигация</li>
+                    <li>Splash screen</li>
+                  </ul>
+                </div>
+                <div class="pwa-feature">
+                  <div class="pwa-feature__icon">
+                    <i class="fas fa-wifi"></i>
+                  </div>
+                  <h3>Офлайн работа</h3>
+                  <p>Доступ к последним данным даже без интернет-соединения</p>
+                  <ul>
+                    <li>Service Worker кэширование</li>
+                    <li>Локальное хранение данных</li>
+                    <li>Синхронизация при подключении</li>
+                    <li>Индикатор статуса сети</li>
+                  </ul>
+                </div>
+                <div class="pwa-feature">
+                  <div class="pwa-feature__icon">
+                    <i class="fas fa-bell"></i>
+                  </div>
+                  <h3>Push уведомления</h3>
+                  <p>Персональные уведомления о важных изменениях погоды</p>
+                  <ul>
+                    <li>Предупреждения о штормах</li>
+                    <li>Ежедневные прогнозы</li>
+                    <li>Напоминания о зонте</li>
+                    <li>Настраиваемые алерты</li>
+                  </ul>
+                </div>
+                <div class="pwa-feature">
+                  <div class="pwa-feature__icon">
+                    <i class="fas fa-rocket"></i>
+                  </div>
+                  <h3>Высокая производительность</h3>
+                  <p>Быстрая загрузка и плавная работа на любых устройствах</p>
+                  <ul>
+                    <li>Lazy loading изображений</li>
+                    <li>Минификация ресурсов</li>
+                    <li>Оптимизация критического пути</li>
+                    <li>Предзагрузка данных</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Weather Features -->
+            <div class="project-section">
+              <h2>Функции прогноза погоды</h2>
+              <div class="weather-features">
+                <div class="weather-feature">
+                  <h3>
+                    <i class="fas fa-thermometer-half"></i> Текущая погода
+                  </h3>
+                  <p>
+                    Актуальная информация о погодных условиях в реальном времени
+                  </p>
+                  <div class="weather-details">
+                    <span class="weather-detail">Температура</span>
+                    <span class="weather-detail">Влажность</span>
+                    <span class="weather-detail">Давление</span>
+                    <span class="weather-detail">Видимость</span>
+                    <span class="weather-detail">УФ-индекс</span>
+                    <span class="weather-detail">Скорость ветра</span>
+                  </div>
+                </div>
+                <div class="weather-feature">
+                  <h3>
+                    <i class="fas fa-calendar-week"></i> Прогноз на 7 дней
+                  </h3>
+                  <p>Детальный прогноз погоды на неделю вперед</p>
+                  <div class="weather-details">
+                    <span class="weather-detail">Мин/Макс температура</span>
+                    <span class="weather-detail">Вероятность осадков</span>
+                    <span class="weather-detail">Направление ветра</span>
+                    <span class="weather-detail">Восход/Закат</span>
+                  </div>
+                </div>
+                <div class="weather-feature">
+                  <h3><i class="fas fa-clock"></i> Почасовой прогноз</h3>
+                  <p>Подробная информация о погоде на ближайшие 48 часов</p>
+                  <div class="weather-details">
+                    <span class="weather-detail">Температура по часам</span>
+                    <span class="weather-detail">Осадки</span>
+                    <span class="weather-detail">Облачность</span>
+                    <span class="weather-detail">Ощущается как</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Maps -->
+            <div class="project-section">
+              <h2>Интерактивные карты</h2>
+              <div class="maps-features">
+                <div class="map-feature">
+                  <div class="map-feature__icon">
+                    <i class="fas fa-map"></i>
+                  </div>
+                  <h3>Погодные слои</h3>
+                  <ul>
+                    <li>Радар осадков</li>
+                    <li>Облачность</li>
+                    <li>Температурная карта</li>
+                    <li>Направление ветра</li>
+                    <li>Атмосферное давление</li>
+                  </ul>
+                </div>
+                <div class="map-feature">
+                  <div class="map-feature__icon">
+                    <i class="fas fa-satellite"></i>
+                  </div>
+                  <h3>Спутниковые снимки</h3>
+                  <ul>
+                    <li>Реальные спутниковые данные</li>
+                    <li>Анимация движения облаков</li>
+                    <li>Высокое разрешение</li>
+                    <li>Обновление каждые 15 минут</li>
+                  </ul>
+                </div>
+                <div class="map-feature">
+                  <div class="map-feature__icon">
+                    <i class="fas fa-search-location"></i>
+                  </div>
+                  <h3>Поиск локаций</h3>
+                  <ul>
+                    <li>Автоопределение местоположения</li>
+                    <li>Поиск по названию города</li>
+                    <li>Сохранение избранных мест</li>
+                    <li>Множественные локации</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Implementation -->
+            <div class="project-section">
+              <h2>Техническая реализация</h2>
+              <div class="tech-stack-detailed">
+                <div class="tech-category">
+                  <h3><i class="fab fa-vuejs"></i> Frontend (Vue.js)</h3>
+                  <div class="tech-items">
+                    <div class="tech-item">
+                      <h4>Vue 3 Composition API</h4>
+                      <p>Современный подход к разработке с реактивностью</p>
+                    </div>
+                    <div class="tech-item">
+                      <h4>Vuetify Material Design</h4>
+                      <p>Красивый и адаптивный пользовательский интерфейс</p>
+                    </div>
+                    <div class="tech-item">
+                      <h4>Vue Router</h4>
+                      <p>SPA навигация с lazy loading компонентов</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tech-category">
+                  <h3><i class="fas fa-cog"></i> PWA Technologies</h3>
+                  <div class="tech-items">
+                    <div class="tech-item">
+                      <h4>Service Workers</h4>
+                      <p>Кэширование ресурсов и офлайн функциональность</p>
+                    </div>
+                    <div class="tech-item">
+                      <h4>Web App Manifest</h4>
+                      <p>Настройки для установки приложения</p>
+                    </div>
+                    <div class="tech-item">
+                      <h4>Push API</h4>
+                      <p>Система уведомлений в реальном времени</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenges -->
+            <div class="project-section">
+              <h2>Вызовы и решения</h2>
+              <div class="challenges">
+                <div class="challenge">
+                  <h3>Офлайн функциональность</h3>
+                  <p>
+                    <strong>Проблема:</strong> Обеспечение работы приложения без
+                    интернет-соединения.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Реализация Service Workers с умным
+                    кэшированием и стратегией "cache-first".
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Производительность на мобильных</h3>
+                  <p>
+                    <strong>Проблема:</strong> Быстрая загрузка на медленных
+                    соединениях.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Оптимизация изображений, lazy
+                    loading и минификация ресурсов.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Точность геолокации</h3>
+                  <p>
+                    <strong>Проблема:</strong> Получение точного местоположения
+                    пользователя.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Комбинация GPS, IP-геолокации и
+                    пользовательского выбора.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Projects -->
+      <section class="related-projects section">
+        <div class="container">
+          <h2 class="section__title">Похожие проекты</h2>
+          <div class="related-projects__grid">
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
+                  alt="FinanceApp"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Mobile Banking App "FinanceApp"</h3>
+                <p>Мобильное приложение для банковских операций</p>
+                <a href="finance-app.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=300&h=200&fit=crop"
+                  alt="CryptoWatch"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Cryptocurrency Tracker "CryptoWatch"</h3>
+                <p>Трекер криптовалют с портфолио</p>
+                <a href="crypto-watch.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <div class="footer__brand">
+              <i class="fas fa-code"></i>
+              <span>DevPortfolio</span>
+            </div>
+            <p>
+              Создаю современные веб-приложения с использованием передовых
+              технологий
+            </p>
+          </div>
+          <div class="footer__section">
+            <h4>Навигация</h4>
+            <ul class="footer__links">
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="../projects.html">Проекты</a></li>
+              <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2024 DevPortfolio. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

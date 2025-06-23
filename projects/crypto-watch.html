@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoWatch - Cryptocurrency Tracker | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <i class="fas fa-code"></i>
+          <span>DevPortfolio</span>
+        </div>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="../about.html" class="nav__link">О себе</a>
+          </li>
+          <li class="nav__item">
+            <a href="../projects.html" class="nav__link">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="../skills.html" class="nav__link">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="../contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="../projects.html" class="btn btn--outline-pro btn--sm">
+            <i class="fas fa-arrow-left"></i>
+            Назад к проектам
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 70px">
+      <!-- Project Hero -->
+      <section class="project-hero section">
+        <div class="container">
+          <div class="project-hero__content">
+            <div class="project-hero__text">
+              <div class="project-hero__badges">
+                <span class="project-badge project-badge--frontend"
+                  >Frontend</span
+                >
+                <span class="project-badge project-badge--crypto">Crypto</span>
+              </div>
+              <h1 class="project-hero__title">
+                Cryptocurrency Tracker "CryptoWatch"
+              </h1>
+              <p class="project-hero__description">
+                Приложение для отслеживания криптовалют с портфолио, графиками,
+                новостями, алертами и DeFi интеграцией для полного контроля над
+                криптоинвестициями.
+              </p>
+
+              <div class="project-hero__stats">
+                <div class="stat">
+                  <div class="stat__number">5000+</div>
+                  <div class="stat__label">криптовалют</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">50+</div>
+                  <div class="stat__label">бирж</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">24/7</div>
+                  <div class="stat__label">мониторинг</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-hero__image">
+              <img
+                src="https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=600&h=400&fit=crop"
+                alt="CryptoWatch Dashboard"
+              />
+              <div class="project-hero__tech-stack">
+                <h4>Технологии:</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Chart.js</span>
+                  <span class="tech-tag">CoinGecko API</span>
+                  <span class="tech-tag">Web3.js</span>
+                  <span class="tech-tag">Styled Components</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Details -->
+      <section class="project-details section section--gray">
+        <div class="container">
+          <div class="project-details__content">
+            <!-- Overview -->
+            <div class="project-section">
+              <h2>Обзор проекта</h2>
+              <p>
+                CryptoWatch — это комплексное приложение для отслеживания
+                криптовалют, которое предоставляет пользователям все необходимые
+                инструменты для мониторинга и управления криптопортфолио.
+                Приложение интегрируется с множественными биржами и DeFi
+                протоколами.
+              </p>
+              <p>
+                Система обеспечивает реальное время обновления цен, детальную
+                аналитику, новости рынка и персональные алерты для принятия
+                обоснованных инвестиционных решений.
+              </p>
+            </div>
+
+            <!-- Core Features -->
+            <div class="project-section">
+              <h2>Основные возможности</h2>
+              <div class="crypto-features">
+                <div class="crypto-feature">
+                  <div class="crypto-feature__icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <h3>Отслеживание цен</h3>
+                  <p>Мониторинг цен криптовалют в реальном времени</p>
+                  <ul>
+                    <li>5000+ криптовалют</li>
+                    <li>Обновление каждые 10 секунд</li>
+                    <li>Исторические данные</li>
+                    <li>Множественные валюты</li>
+                    <li>Рыночная капитализация</li>
+                  </ul>
+                </div>
+                <div class="crypto-feature">
+                  <div class="crypto-feature__icon">
+                    <i class="fas fa-wallet"></i>
+                  </div>
+                  <h3>Управление портфолио</h3>
+                  <p>Полный контроль над криптоинвестициями</p>
+                  <ul>
+                    <li>Добавление транзакций</li>
+                    <li>Автоматический расчет P&L</li>
+                    <li>Диверсификация портфолио</li>
+                    <li>Импорт из бирж</li>
+                    <li>Налоговая отчетность</li>
+                  </ul>
+                </div>
+                <div class="crypto-feature">
+                  <div class="crypto-feature__icon">
+                    <i class="fas fa-bell"></i>
+                  </div>
+                  <h3>Алерты и уведомления</h3>
+                  <p>Персональные уведомления о важных событиях</p>
+                  <ul>
+                    <li>Ценовые алерты</li>
+                    <li>Изменения объема</li>
+                    <li>Новости рынка</li>
+                    <li>DeFi события</li>
+                    <li>Push уведомления</li>
+                  </ul>
+                </div>
+                <div class="crypto-feature">
+                  <div class="crypto-feature__icon">
+                    <i class="fas fa-newspaper"></i>
+                  </div>
+                  <h3>Новости и аналитика</h3>
+                  <p>Актуальная информация о криптовалютном рынке</p>
+                  <ul>
+                    <li>Агрегация новостей</li>
+                    <li>Анализ настроений</li>
+                    <li>Технический анализ</li>
+                    <li>Экспертные прогнозы</li>
+                    <li>Социальные метрики</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- DeFi Integration -->
+            <div class="project-section">
+              <h2>DeFi интеграция</h2>
+              <div class="defi-features">
+                <div class="defi-feature">
+                  <h3><i class="fas fa-link"></i> Подключение кошельков</h3>
+                  <p>Интеграция с популярными криптокошельками</p>
+                  <div class="defi-wallets">
+                    <span class="defi-wallet">MetaMask</span>
+                    <span class="defi-wallet">WalletConnect</span>
+                    <span class="defi-wallet">Coinbase Wallet</span>
+                    <span class="defi-wallet">Trust Wallet</span>
+                  </div>
+                </div>
+                <div class="defi-feature">
+                  <h3><i class="fas fa-coins"></i> DeFi протоколы</h3>
+                  <p>Мониторинг позиций в децентрализованных протоколах</p>
+                  <div class="defi-protocols">
+                    <span class="defi-protocol">Uniswap</span>
+                    <span class="defi-protocol">Compound</span>
+                    <span class="defi-protocol">Aave</span>
+                    <span class="defi-protocol">Curve</span>
+                  </div>
+                </div>
+                <div class="defi-feature">
+                  <h3><i class="fas fa-percentage"></i> Yield Farming</h3>
+                  <p>Отслеживание доходности от фарминга и стейкинга</p>
+                  <div class="yield-features">
+                    <span class="yield-feature">APY калькулятор</span>
+                    <span class="yield-feature">Impermanent Loss</span>
+                    <span class="yield-feature">Автокомпаундинг</span>
+                    <span class="yield-feature">Риск-анализ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Charts and Analytics -->
+            <div class="project-section">
+              <h2>Графики и аналитика</h2>
+              <div class="charts-features">
+                <div class="chart-feature">
+                  <div class="chart-feature__icon">
+                    <i class="fas fa-chart-area"></i>
+                  </div>
+                  <h3>Интерактивные графики</h3>
+                  <ul>
+                    <li>Candlestick charts</li>
+                    <li>Технические индикаторы</li>
+                    <li>Объемы торгов</li>
+                    <li>Сравнение активов</li>
+                    <li>Множественные таймфреймы</li>
+                  </ul>
+                </div>
+                <div class="chart-feature">
+                  <div class="chart-feature__icon">
+                    <i class="fas fa-calculator"></i>
+                  </div>
+                  <h3>Финансовые метрики</h3>
+                  <ul>
+                    <li>ROI и P&L расчеты</li>
+                    <li>Sharpe ratio</li>
+                    <li>Максимальная просадка</li>
+                    <li>Корреляционный анализ</li>
+                    <li>Value at Risk (VaR)</li>
+                  </ul>
+                </div>
+                <div class="chart-feature">
+                  <div class="chart-feature__icon">
+                    <i class="fas fa-pie-chart"></i>
+                  </div>
+                  <h3>Визуализация портфолио</h3>
+                  <ul>
+                    <li>Круговые диаграммы</li>
+                    <li>Treemap визуализация</li>
+                    <li>Аллокация активов</li>
+                    <li>Исторические изменения</li>
+                    <li>Сравнение с индексами</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Architecture -->
+            <div class="project-section">
+              <h2>Техническая архитектура</h2>
+              <div class="crypto-architecture">
+                <div class="arch-layer">
+                  <h3>Frontend (React + TypeScript)</h3>
+                  <div class="arch-components">
+                    <span class="arch-component">React Hooks</span>
+                    <span class="arch-component">Context API</span>
+                    <span class="arch-component">React Query</span>
+                    <span class="arch-component">Styled Components</span>
+                  </div>
+                </div>
+                <div class="arch-layer">
+                  <h3>Data Visualization</h3>
+                  <div class="arch-components">
+                    <span class="arch-component">Chart.js</span>
+                    <span class="arch-component">D3.js</span>
+                    <span class="arch-component">Recharts</span>
+                    <span class="arch-component">TradingView</span>
+                  </div>
+                </div>
+                <div class="arch-layer">
+                  <h3>Blockchain Integration</h3>
+                  <div class="arch-components">
+                    <span class="arch-component">Web3.js</span>
+                    <span class="arch-component">Ethers.js</span>
+                    <span class="arch-component">WalletConnect</span>
+                    <span class="arch-component">The Graph</span>
+                  </div>
+                </div>
+                <div class="arch-layer">
+                  <h3>APIs & Data Sources</h3>
+                  <div class="arch-components">
+                    <span class="arch-component">CoinGecko API</span>
+                    <span class="arch-component">CoinMarketCap</span>
+                    <span class="arch-component">DeFiPulse</span>
+                    <span class="arch-component">CryptoCompare</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenges -->
+            <div class="project-section">
+              <h2>Вызовы и решения</h2>
+              <div class="challenges">
+                <div class="challenge">
+                  <h3>Обработка больших объемов данных</h3>
+                  <p>
+                    <strong>Проблема:</strong> Обновление цен тысяч криптовалют
+                    в реальном времени.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> WebSocket соединения с
+                    оптимизированным кэшированием и виртуализацией списков.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Безопасность кошельков</h3>
+                  <p>
+                    <strong>Проблема:</strong> Безопасное подключение к
+                    криптокошелькам пользователей.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Использование WalletConnect
+                    протокола и read-only подключений без доступа к приватным
+                    ключам.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Точность DeFi данных</h3>
+                  <p>
+                    <strong>Проблема:</strong> Получение актуальных данных из
+                    децентрализованных протоколов.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Интеграция с The Graph для
+                    индексации блокчейн данных и прямые вызовы смарт-контрактов.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Projects -->
+      <section class="related-projects section">
+        <div class="container">
+          <h2 class="section__title">Похожие проекты</h2>
+          <div class="related-projects__grid">
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop"
+                  alt="FinanceApp"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Mobile Banking App "FinanceApp"</h3>
+                <p>Мобильное приложение для банковских операций</p>
+                <a href="finance-app.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop"
+                  alt="DataViz"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Analytics Dashboard "DataViz"</h3>
+                <p>Интерактивная панель аналитики</p>
+                <a href="dataviz.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <div class="footer__brand">
+              <i class="fas fa-code"></i>
+              <span>DevPortfolio</span>
+            </div>
+            <p>
+              Создаю современные веб-приложения с использованием передовых
+              технологий
+            </p>
+          </div>
+          <div class="footer__section">
+            <h4>Навигация</h4>
+            <ul class="footer__links">
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="../projects.html">Проекты</a></li>
+              <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2024 DevPortfolio. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

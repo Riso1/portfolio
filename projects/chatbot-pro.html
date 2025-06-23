@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBot Pro - AI Chat Assistant | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <i class="fas fa-code"></i>
+          <span>DevPortfolio</span>
+        </div>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="../about.html" class="nav__link">О себе</a>
+          </li>
+          <li class="nav__item">
+            <a href="../projects.html" class="nav__link">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="../skills.html" class="nav__link">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="../contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <a href="../projects.html" class="btn btn--outline-pro btn--sm">
+            <i class="fas fa-arrow-left"></i>
+            Назад к проектам
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 70px">
+      <!-- Project Hero -->
+      <section class="project-hero section">
+        <div class="container">
+          <div class="project-hero__content">
+            <div class="project-hero__text">
+              <div class="project-hero__badges">
+                <span class="project-badge project-badge--featured"
+                  >Избранное</span
+                >
+                <span class="project-badge project-badge--fullstack"
+                  >Full Stack</span
+                >
+              </div>
+              <h1 class="project-hero__title">
+                AI Chat Assistant "ChatBot Pro"
+              </h1>
+              <p class="project-hero__description">
+                Интеллектуальный чат-бот с интеграцией OpenAI, поддержкой
+                контекстных диалогов, файловых вложений и реалтайм общением
+                через WebSocket соединения.
+              </p>
+
+              <div class="project-hero__stats">
+                <div class="stat">
+                  <div class="stat__number">4</div>
+                  <div class="stat__label">месяца разработки</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">10K+</div>
+                  <div class="stat__label">сообщений в день</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">95%</div>
+                  <div class="stat__label">точность ответов</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-hero__image">
+              <img
+                src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop"
+                alt="ChatBot Pro Interface"
+              />
+              <div class="project-hero__tech-stack">
+                <h4>Технологии:</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Socket.io</span>
+                  <span class="tech-tag">OpenAI</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">JWT</span>
+                  <span class="tech-tag">Material-UI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Details -->
+      <section class="project-details section section--gray">
+        <div class="container">
+          <div class="project-details__content">
+            <!-- Overview -->
+            <div class="project-section">
+              <h2>Обзор проекта</h2>
+              <p>
+                ChatBot Pro — это продвинутый AI-ассистент, построенный на базе
+                OpenAI GPT-4, который способен вести контекстные диалоги,
+                обрабатывать файловые вложения и предоставлять
+                персонализированные ответы. Система поддерживает множественные
+                чаты, голосовые сообщения и интеграцию с популярными
+                мессенджерами.
+              </p>
+              <p>
+                Проект включает веб-интерфейс для пользователей,
+                административную панель для настройки поведения бота, API для
+                интеграции с внешними системами и детальную аналитику
+                использования.
+              </p>
+            </div>
+
+            <!-- Features -->
+            <div class="project-section">
+              <h2>Ключевые возможности</h2>
+              <div class="features-grid">
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-brain"></i>
+                  </div>
+                  <h3>Искусственный интеллект</h3>
+                  <p>
+                    Интеграция с OpenAI GPT-4 для генерации умных и контекстных
+                    ответов
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-comments"></i>
+                  </div>
+                  <h3>Реалтайм чат</h3>
+                  <p>
+                    Мгновенный обмен сообщениями через WebSocket с поддержкой
+                    типизации
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-file-upload"></i>
+                  </div>
+                  <h3>Файловые вложения</h3>
+                  <p>
+                    Загрузка и анализ документов, изображений и других файлов
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-microphone"></i>
+                  </div>
+                  <h3>Голосовые сообщения</h3>
+                  <p>
+                    Распознавание речи и синтез голоса для голосового
+                    взаимодействия
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <h3>Множественные чаты</h3>
+                  <p>
+                    Поддержка нескольких диалогов с сохранением контекста
+                    каждого
+                  </p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-card__icon">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                  <h3>Аналитика</h3>
+                  <p>
+                    Детальная статистика использования и эффективности ответов
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Implementation -->
+            <div class="project-section">
+              <h2>Техническая реализация</h2>
+              <div class="tech-implementation">
+                <div class="tech-block">
+                  <h3><i class="fas fa-robot"></i> AI Integration</h3>
+                  <ul>
+                    <li>OpenAI GPT-4 API для генерации ответов</li>
+                    <li>Система промптов для разных сценариев</li>
+                    <li>Контекстная память диалогов</li>
+                    <li>Модерация контента</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-bolt"></i> Реалтайм</h3>
+                  <ul>
+                    <li>Socket.io для WebSocket соединений</li>
+                    <li>Индикаторы набора текста</li>
+                    <li>Статусы доставки сообщений</li>
+                    <li>Автоматическое переподключение</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-database"></i> Хранение данных</h3>
+                  <ul>
+                    <li>MongoDB для сообщений и чатов</li>
+                    <li>Redis для кэширования сессий</li>
+                    <li>GridFS для файловых вложений</li>
+                    <li>Индексирование для быстрого поиска</li>
+                  </ul>
+                </div>
+                <div class="tech-block">
+                  <h3><i class="fas fa-shield-alt"></i> Безопасность</h3>
+                  <ul>
+                    <li>JWT аутентификация</li>
+                    <li>Rate limiting для API</li>
+                    <li>Валидация и санитизация входных данных</li>
+                    <li>Шифрование чувствительных данных</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- AI Features -->
+            <div class="project-section">
+              <h2>Возможности ИИ</h2>
+              <div class="ai-features">
+                <div class="ai-feature">
+                  <h3><i class="fas fa-language"></i> Многоязычность</h3>
+                  <p>
+                    Поддержка более 50 языков с автоматическим определением
+                    языка пользователя
+                  </p>
+                </div>
+                <div class="ai-feature">
+                  <h3>
+                    <i class="fas fa-lightbulb"></i> Контекстное понимание
+                  </h3>
+                  <p>
+                    Анализ предыдущих сообщений для поддержания логичного
+                    диалога
+                  </p>
+                </div>
+                <div class="ai-feature">
+                  <h3><i class="fas fa-code"></i> Генерация кода</h3>
+                  <p>
+                    Помощь в написании и объяснении кода на различных языках
+                    программирования
+                  </p>
+                </div>
+                <div class="ai-feature">
+                  <h3><i class="fas fa-image"></i> Анализ изображений</h3>
+                  <p>
+                    Описание и анализ загруженных изображений с помощью
+                    компьютерного зрения
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screenshots -->
+            <div class="project-section">
+              <h2>Интерфейс</h2>
+              <div class="screenshots-grid">
+                <div class="screenshot">
+                  <img
+                    src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop"
+                    alt="Главный интерфейс чата"
+                  />
+                  <p>Главный интерфейс чата</p>
+                </div>
+                <div class="screenshot">
+                  <img
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop"
+                    alt="Панель управления"
+                  />
+                  <p>Административная панель</p>
+                </div>
+                <div class="screenshot">
+                  <img
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+                    alt="Аналитика"
+                  />
+                  <p>Дашборд аналитики</p>
+                </div>
+                <div class="screenshot">
+                  <img
+                    src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop"
+                    alt="Мобильная версия"
+                  />
+                  <p>Мобильная версия</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Challenges -->
+            <div class="project-section">
+              <h2>Вызовы и решения</h2>
+              <div class="challenges">
+                <div class="challenge">
+                  <h3>Управление контекстом</h3>
+                  <p>
+                    <strong>Проблема:</strong> Поддержание контекста длинных
+                    диалогов при ограничениях токенов OpenAI.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Реализация системы сжатия
+                    контекста и умного выбора наиболее релевантных сообщений.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Производительность реалтайм</h3>
+                  <p>
+                    <strong>Проблема:</strong> Задержки в доставке сообщений при
+                    большом количестве пользователей.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Оптимизация Socket.io соединений и
+                    использование Redis для масштабирования.
+                  </p>
+                </div>
+                <div class="challenge">
+                  <h3>Модерация контента</h3>
+                  <p>
+                    <strong>Проблема:</strong> Необходимость фильтрации
+                    неподходящего контента.
+                  </p>
+                  <p>
+                    <strong>Решение:</strong> Интеграция OpenAI Moderation API и
+                    собственных фильтров.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Projects -->
+      <section class="related-projects section">
+        <div class="container">
+          <h2 class="section__title">Похожие проекты</h2>
+          <div class="related-projects__grid">
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=300&h=200&fit=crop"
+                  alt="ConnectHub"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Social Media Platform "ConnectHub"</h3>
+                <p>Социальная сеть с мессенджером и сообществами</p>
+                <a href="connecthub.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=300&h=200&fit=crop"
+                  alt="TaskFlow"
+                />
+              </div>
+              <div class="project-card__content">
+                <h3>Task Management System "TaskFlow"</h3>
+                <p>Система управления проектами с командной работой</p>
+                <a href="taskflow.html" class="btn btn--sm btn--outline-pro"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <div class="footer__brand">
+              <i class="fas fa-code"></i>
+              <span>DevPortfolio</span>
+            </div>
+            <p>
+              Создаю современные веб-приложения с использованием передовых
+              технологий
+            </p>
+          </div>
+          <div class="footer__section">
+            <h4>Навигация</h4>
+            <ul class="footer__links">
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="../projects.html">Проекты</a></li>
+              <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2024 DevPortfolio. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

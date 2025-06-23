@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Full Stack Developer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <i class="fas fa-code"></i>
+          <span>DevPortfolio</span>
+        </div>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">О себе</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Навыки</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero__bg"></div>
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__text">
+              <div class="hero__badge">
+                <i class="fas fa-terminal"></i>
+                Full Stack Developer
+              </div>
+              <h1 class="hero__title">
+                Создаю
+                <span class="gradient-text">цифровые решения</span>
+                будущего
+              </h1>
+              <p class="hero__description">
+                Разрабатываю современные веб-приложения с использованием
+                передовых технологий. От концепции до деплоя - полный цикл
+                разработки.
+              </p>
+
+              <div class="hero__buttons">
+                <a href="#projects" class="btn btn--primary btn--lg">
+                  Посмотреть проекты
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn--outline btn--lg">
+                  Связаться со мной
+                </a>
+              </div>
+
+              <div class="hero__stats">
+                <div class="stat">
+                  <div class="stat__number">50+</div>
+                  <div class="stat__label">Проектов</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">5+</div>
+                  <div class="stat__label">Лет опыта</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">15+</div>
+                  <div class="stat__label">Технологий</div>
+                </div>
+              </div>
+            </div>
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Технический стек</h2>
+            <p class="section__description">
+              Постоянно изучаю новые технологии и совершенствую навыки в
+              современной разработке
+            </p>
+          </div>
+
+          <div class="skills__grid">
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <h3>JavaScript</h3>
+                <span>95%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" style="width: 95%"></div>
+              </div>
+              <span class="skill-card__experience">5+ лет</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <h3>TypeScript</h3>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" style="width: 90%"></div>
+              </div>
+              <span class="skill-card__experience">3+ года</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <h3>React</h3>
+                <span>92%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" style="width: 92%"></div>
+              </div>
+              <span class="skill-card__experience">4+ года</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <h3>Next.js</h3>
+                <span>88%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" style="width: 88%"></div>
+              </div>
+              <span class="skill-card__experience">2+ года</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <h3>Node.js</h3>
+                <span>85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" style="width: 85%"></div>
+              </div>
+              <span class="skill-card__experience">4+ года</span>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <h3>Python</h3>
+                <span>80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar__fill" style="width: 80%"></div>
+              </div>
+              <span class="skill-card__experience">2+ года</span>
+            </div>
+          </div>
+
+          <div class="tech-categories">
+            <div class="tech-card">
+              <div class="tech-card__icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h3>Frontend</h3>
+              <p>React, Vue, Angular, TypeScript</p>
+            </div>
+
+            <div class="tech-card">
+              <div class="tech-card__icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Backend</h3>
+              <p>Node.js, Python, PostgreSQL, MongoDB</p>
+            </div>
+
+            <div class="tech-card">
+              <div class="tech-card__icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Mobile</h3>
+              <p>React Native, Flutter</p>
+            </div>
+
+            <div class="tech-card">
+              <div class="tech-card__icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h3>DevOps</h3>
+              <p>Docker, AWS, CI/CD, Kubernetes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects на главной странице -->
+      <section id="projects" class="projects section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Избранные проекты</h2>
+            <p class="section__description">
+              Некоторые из моих последних работ, демонстрирующие различные
+              технологии и подходы
+            </p>
+          </div>
+
+          <div class="projects__grid">
+            <!-- Проект 1 -->
+            <div class="project-card" data-category="fullstack">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop"
+                  alt="ShopFlow"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/shopflow.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+                <span class="project-card__badge">Избранное</span>
+              </div>
+              <div class="project-card__content">
+                <h3>E-Commerce Platform "ShopFlow"</h3>
+                <p>
+                  Полнофункциональная платформа электронной коммерции с
+                  микросервисной архитектурой
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">Redis</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Проект 2 -->
+            <div class="project-card" data-category="fullstack">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop"
+                  alt="AI Chat Application"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/chatbot-pro.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+                <span class="project-card__badge">Избранное</span>
+              </div>
+              <div class="project-card__content">
+                <h3>AI Chat Assistant "ChatBot Pro"</h3>
+                <p>
+                  Интеллектуальный чат-бот с интеграцией OpenAI и реалтайм
+                  общением
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Socket.io</span>
+                  <span class="tech-tag">OpenAI</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Проект 3 -->
+            <div class="project-card" data-category="mobile">
+              <div class="project-card__image">
+                <img
+                  src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop"
+                  alt="Mobile Banking App"
+                />
+                <div class="project-card__overlay">
+                  <a
+                    href="/projects/finance-app.html"
+                    class="btn btn--sm btn--secondary"
+                  >
+                    <i class="fas fa-eye"></i>
+                    Подробнее
+                  </a>
+                </div>
+                <span class="project-card__badge">Избранное</span>
+              </div>
+              <div class="project-card__content">
+                <h3>Mobile Banking App</h3>
+                <p>Мобильное приложение с биометрической аутентификацией</p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">React Native</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Redux</span>
+                  <span class="tech-tag">Firebase</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="projects.html" class="btn btn--outline-all btn--lg">
+              Все проекты
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about section section--gray">
+        <div class="container">
+          <div class="about__content">
+            <div class="about__text">
+              <div class="section__header">
+                <h2 class="section__title">Обо мне</h2>
+                <p class="section__description">
+                  Привет! Я Full Stack разработчик с 5+ летним опытом создания
+                  современных веб-приложений.
+                </p>
+              </div>
+
+              <div class="about__description">
+                <p>
+                  Моя страсть к программированию началась еще в университете,
+                  где я изучал компьютерные науки. За годы работы я накопил
+                  обширный опыт в различных технологиях и подходах к разработке.
+                </p>
+                <p>
+                  Специализируюсь на создании масштабируемых веб-приложений с
+                  использованием современного стека технологий. Люблю решать
+                  сложные задачи и постоянно изучаю новые инструменты и
+                  методологии.
+                </p>
+              </div>
+
+              <div class="about__info">
+                <div class="info-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Москва, Россия</span>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>5+ лет опыта</span>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-coffee"></i>
+                  <span>1000+ чашек кофе</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title">Свяжитесь со мной</h2>
+            <p class="section__description">
+              Готов обсудить ваш проект и воплотить ваши идеи в жизнь. Напишите
+              мне!
+            </p>
+          </div>
+
+          <div class="contact__content">
+            <div class="contact__info">
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-card__content">
+                  <h3>Email</h3>
+                  <p>aleksandr.developer.full@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-card__icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-card__content">
+                  <h3>Местоположение</h3>
+                  <p>Москва, Россия</p>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <h3>Социальные сети</h3>
+                <div class="social-links__list">
+                  <a href="https://github.com/Riso1" class="social-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://t.me/goytue" class="social-link">
+                    <i class="fab fa-telegram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta section">
+        <div class="container">
+          <div class="cta__content">
+            <h2>Готовы начать проект?</h2>
+            <p>
+              Свяжитесь со мной, чтобы обсудить ваши идеи и воплотить их в жизнь
+            </p>
+            <div class="cta__buttons">
+              <a href="#contact" class="btn btn--secondary btn--lg"
+                >Написать мне</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <div class="footer__brand">
+              <i class="fas fa-code"></i>
+              <span>DevPortfolio</span>
+            </div>
+            <p>
+              Создаю современные веб-приложения с использованием передовых
+              технологий
+            </p>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="footer__social-link">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__section">
+            <h4>Навигация</h4>
+            <ul class="footer__links">
+              <li><a href="#home">Главная</a></li>
+              <li><a href="#about">О себе</a></li>
+              <li><a href="#projects">Проекты</a></li>
+              <li><a href="#skills">Навыки</a></li>
+              <li><a href="#contact">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h4>Услуги</h4>
+            <ul class="footer__links">
+              <li>Веб-разработка</li>
+              <li>Мобильные приложения</li>
+              <li>UI/UX дизайн</li>
+              <li>Консультации</li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h4>Контакты</h4>
+            <ul class="footer__contacts">
+              <li>aleksandr.developer.full@gmail.com</li>
+              <li>Москва, Россия</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>&copy; 2024 DevPortfolio. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
